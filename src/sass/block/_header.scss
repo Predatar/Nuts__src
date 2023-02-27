@@ -35,6 +35,25 @@
             display: flex;
             justify-content: space-between;
         }
+        &-tel {
+            display: none;
+            align-items: center;
+            &-img {
+                width: 10px;
+                margin-right: 6px;
+            }
+            &-link {
+                margin-right: 25px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: $alternate_text_color;
+                span {
+                    color: $first_color;
+                }
+            }
+        }
     }
 
     &__middle {
@@ -135,6 +154,7 @@
             line-height: 15px;
             letter-spacing: 0.02em;
             color: $default_color;
+            cursor: pointer;
         }
         &-text {
             width: 144px;
@@ -219,11 +239,30 @@
     }
 }
 .personal-discount {
-    font-family: 'Montserrat';
+    &_top {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $first_color;
+    }
+    &_bottom {
+        display: none;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: $first_color;
+    }
+}
+.book-call {
+    font-family: 'Raleway';
     font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
     color: $first_color;
+    border-bottom: 1px solid $first_color;
 }
 .user-unit {
     width: 236px;
@@ -321,6 +360,15 @@
 
 .hamburger {
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    span {
+        width: 100%;
+        height: 2px;
+        background-color: $alternate_text_color;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -355,14 +403,18 @@
             }
         }
     }
-    .hamburger {
-        display: flex;
-    }
 }
 @media (max-width: 1024px) {
     .header {
         &__top {
-            &-wrapper {
+            &-container {
+                width: auto;
+            }
+            &-tel {
+                display: flex;
+            }
+            &-social {
+                display: none;
             }
         }
         &__logo {
@@ -394,14 +446,77 @@
             }
         }
         &__bottom {
+            height: 33px;
+            display: none;
             &-wrapper {
+                display: none;
             }
         }
     }
+    .personal-discount {
+        &_bottom {
+        }
+    }
+    .user-unit {
+        width: auto;
+        &__login {
+            display: none;
+        }
+        &__registration {
+            display: none;
+        }
+        &__language {
+            margin-left: 25px;
+            outline: 1px solid $first_color;
+        }
+    }
+    .hamburger {
+        display: flex;
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 630px) {
+    .personal-discount {
+        &_top {
+            display: none;
+        }
+    }
 }
 @media (max-width: 425px) {
+    .header {
+        &__top {
+            &-wrapper {
+                margin: 0;
+                margin-left: 12px;
+            }
+        }
+        &__middle {
+            &-wrapper {
+                margin: 0 10px 0 12px;
+            }
+        }
+        &__bottom {
+            &-wrapper {
+                margin: 0;
+                margin-left: 12px;
+            }
+        }
+    }
+    .user-unit {
+        &__language {
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .header {
+        &__top {
+            &-tel {
+                &-link {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
 }
 
 /* 
