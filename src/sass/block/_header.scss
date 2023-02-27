@@ -315,7 +315,7 @@
             font-size: 13px;
             letter-spacing: 0.02em;
             line-height: 15px;
-            color: $alternate_text_color;
+            color: $first_text_color;
             position: relative;
             &::after {
                 content: '';
@@ -362,12 +362,198 @@
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 25px;
-    height: 20px;
+    width: 19px;
+    height: 17px;
     span {
         width: 100%;
-        height: 2px;
+        height: 3px;
         background-color: $alternate_text_color;
+        &:last-child {
+            width: 13px;
+            clip-path: polygon(100% 0, 100% 0, 92% 100%, 0 100%, 0 0);
+        }
+    }
+}
+.sidemenu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    width: 100%;
+    background: #fff;
+    transition: all .5s;
+
+    &__heading {
+        padding: 0 11px;
+        height: 59px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        &-img {
+            width: 34px;
+            height: 33px;
+            margin-right: 8px;
+        }
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $third_color;
+    }
+
+    &__exit {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__main {
+        height: 42px;
+        padding: 0 11px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $first_bg_color;
+    }
+
+    &__account {
+        display: flex;
+        align-items: center;
+    }
+
+    &__login {
+        display: flex;
+        align-items: center;
+        position: relative;
+        &-img {
+            width: 13px;
+            height: 13px;
+            margin-right: 7px;
+        }
+        &-text {
+            height: 16px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $second_color;
+            transition: transform 0.3s ease-out;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            z-index: 1;
+        }
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+
+    &__account-link {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 0.02em;
+        color: $first_text_color;
+    }
+
+    &__registration {
+        margin-left: 27px;
+        height: 16px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $second_color;
+            transition: transform 0.3s ease-out;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            z-index: 1;
+        }
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+
+    &__social {
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__social-item {
+        width: 15px;
+        height: 15px;
+        &:last-child {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__social-link {
+    }
+
+    &__social-link-img {
+    }
+
+    &__navigation {
+    }
+
+    &__list {
+        &-item {
+            border-bottom: 1px solid #f5f5f5;
+            &:last-child {
+                border: none;
+            }
+            &:hover {
+                background-color: $first_color;
+            }
+        }
+        &-link {
+            padding: 16px 11px;
+            width: 100%;
+            display: block;
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            color: $third_color;
+            &:hover {
+                color: $default_color;
+                .sidemenu__list-item {
+                    background-color: $first_color;
+                }
+            }
+        }
+    }
+
+    &_show {
+        left: 0;
     }
 }
 
