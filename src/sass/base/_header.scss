@@ -147,7 +147,8 @@
             align-items: center;
             justify-content: center;
             background-color: $first_color;
-            border: none;
+            border: 1px solid #337d5a;
+            transition: all 0.2s;
             font-family: 'Raleway';
             font-weight: 600;
             font-size: 13px;
@@ -155,6 +156,11 @@
             letter-spacing: 0.02em;
             color: $default_color;
             cursor: pointer;
+
+            &:hover {
+                background-color: $default_color;
+                color: $first_color;
+            }
         }
         &-text {
             width: 144px;

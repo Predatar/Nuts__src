@@ -48,10 +48,15 @@
         align-items: center;
         border-radius: 50%;
         border: 2px solid #ffffff;
+        transition: all .2s;
+        &:hover {
+            border: none;
+            background-color: $first_color;
+        }
     }
 
     &__play-img {
-        width: 13px;
+        width: 10px;
         height: 14px;
     }
 }
@@ -75,10 +80,6 @@
             margin-top: 26px;
             width: 45px;
             height: 45px;
-        }
-
-        &__play-img {
-            width: 10px;
         }
     }
 }

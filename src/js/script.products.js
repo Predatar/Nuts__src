@@ -1,6 +1,8 @@
-const swiper = new Swiper('.swiper', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.products__slider', {
+        navigation: {
+            nextEl: '.products-button-next',
+            prevEl: '.products-button-prev'
+        }
+    });
 });
