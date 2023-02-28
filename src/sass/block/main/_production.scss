@@ -1,0 +1,26 @@
+.production {
+    padding-top: 83px;
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 53px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin: 0 auto;
+        margin-top: 43px;
+        width: 620px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.01em;
+    }
+}

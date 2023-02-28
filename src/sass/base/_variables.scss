@@ -14,6 +14,12 @@ ul {
     padding: 0;
     list-style: none;
 }
+h1, h2 {
+    margin: 0;
+}
+body {
+    position: relative;
+}
 
 $first_color: #337d5a;
 $second_color: #93b474;
@@ -21,7 +27,8 @@ $third_color: #1a2f3f;
 $fourth_color: #8a8a8a;
 
 $first_bg_color: #fafafa;
-$third_bg_color: #fbfbfb;
+$second_bg_color: #fbfbfb;
+$third_bg_color: #fcfcfc;
 
 $first_text_color: #323232;
 

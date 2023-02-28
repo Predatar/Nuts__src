@@ -7,11 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     @@include('html/head.html', {})
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.index.min.css">
 </head>
 
 <body>
     @@include('html/header.html', {})
+    <section class="promo">
+        <div class="promo__bg-img">
+            <img src="@img/main/garden.png" alt="garden" loading="lazy">
+        </div>
+        <h1 class="promo__title">Орех Причерноморья</h1>
+        <div class="promo__subtitle">Единственный в Украине сад совместного выращивание фундука и грецкого ореха</div>
+        <div class="promo__play">
+            <div class="promo__play-img">
+                <img src="@icons/main/play.svg" alt="play">
+            </div>
+        </div>
+    </section>
+    <section class="production">
+        <h2 class="production__title">Продукция</h2>
+        <div class="production__subtitle">Экологически чистые, качественные ядра грецкого ореха и фундука,
+            а также плоды шиповника в удобной, надежной, вакуумной упаковке
+            разного объема</div>
+        @@include('html/products.html', {})
+    </section>
     @@include('html/footer.html', {})
     @@include('html/script.html', {})
 </body>
