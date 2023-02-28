@@ -1,0 +1,105 @@
+.benefits-products {
+    padding: 82px 0 100px;
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 53px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: $third_color;
+    }
+
+    &__subtitle {
+        margin-top: 43px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__group {
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 1290px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__group-item {
+        padding: 0 40px;
+        width: 410px;
+        height: 525px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        &::after {
+            content: '';
+            width: 150%;
+            height: 100%;
+            background-color: $first_color;
+            opacity: 0.95;
+            position: absolute;
+            z-index: 0;
+            transition: all 1.5s;
+            transform: scaleY(0);
+        }
+        &:hover {
+            .benefits-products__group-subtitle {
+                height: 207px;
+            }
+            &::after {
+                transform: scaleY(1);
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    &__group-bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        width: 48px;
+        z-index: 1;
+    }
+
+    &__group-title {
+        margin-top: 24px;
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.01em;
+        color: $default_color;
+        z-index: 1;
+    }
+
+    &__group-subtitle {
+        margin-top: 30px;
+        height: 0;
+        z-index: 1;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: $default_color;
+        transition: all 1s;
+        overflow: hidden;
+    }
+}
