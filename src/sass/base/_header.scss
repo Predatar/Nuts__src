@@ -147,7 +147,8 @@
             align-items: center;
             justify-content: center;
             background-color: $first_color;
-            border: none;
+            border: 1px solid #337d5a;
+            transition: all 0.2s;
             font-family: 'Raleway';
             font-weight: 600;
             font-size: 13px;
@@ -155,6 +156,11 @@
             letter-spacing: 0.02em;
             color: $default_color;
             cursor: pointer;
+
+            &:hover {
+                background-color: $default_color;
+                color: $first_color;
+            }
         }
         &-text {
             width: 144px;
@@ -218,7 +224,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                bottom: -100%;
+                bottom: calc(-100% - 2px);
                 left: 0;
                 width: 100%;
                 height: 3px;
@@ -382,7 +388,7 @@
     z-index: 10;
     width: 100%;
     background: #fff;
-    transition: all .5s;
+    transition: all 0.5s;
 
     &__heading {
         padding: 0 11px;
@@ -594,6 +600,7 @@
 }
 @media (max-width: 1024px) {
     .header {
+        height: auto;
         &__top {
             &-container {
                 width: auto;

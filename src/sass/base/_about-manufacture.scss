@@ -1,0 +1,107 @@
+.about-manufacturer {
+    padding: 100px 0 90px;
+    background-color: $second_bg_color;
+
+    &__container {
+        margin: 0 auto;
+        width: 1290px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        width: 480px;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 53px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__subtitle {
+        margin-top: 55px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+        span {
+            font-weight: 600;
+            color: $first_color;
+        }
+    }
+
+    &__link {
+        margin-top: 53px;
+        width: 170px;
+        height: 52px;
+        border: 1.5px solid #337d5a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $first_color;
+        transition: all 0.2s;
+        &:hover {
+            background-color: $first_color;
+            color: $default_color;
+        }
+    }
+
+    &__slider {
+        position: relative;
+        margin: 0;
+    }
+
+    &__swiper-wrapper {
+        width: 700px;
+    }
+
+    &__slide {
+        width: 700px;
+        height: 472px;
+    }
+
+    &__btn {
+        &-prev, &-next {
+            position: absolute;
+            top: auto;
+            bottom: 0 !important;
+            left: 0;
+            width: 70px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $first_color;
+        }
+        &-next {
+            left: 70px;
+        }
+    }
+
+    &__btn-img {
+        width: 22px;
+        height: 18px;
+    }
+
+    &_white {
+        background-color: $default_color;
+    }
+}
+
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
