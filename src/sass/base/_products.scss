@@ -13,6 +13,7 @@
         width: 410px;
         border: 1px solid #ebebeb;
         transition: all 0.3s;
+        position: relative;
         &:hover {
             border: 1px solid #93b474;
         }
@@ -20,6 +21,9 @@
             .swiper-button-prev,
             .swiper-button-next {
                 display: block;
+            }
+            .products__search {
+                display: flex;
             }
         }
     }
@@ -29,10 +33,11 @@
     }
 
     &__wrapper {
-        background-color: $third_bg_color;
+        position: relative;
     }
 
     &__slide {
+        background-color: $third_bg_color;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -43,6 +48,39 @@
                 width: 243px;
                 height: 191px;
             }
+        }
+    }
+
+    &__search {
+        z-index: 2;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 45px;
+        height: 45px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background-color: $second_color;
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.15);
+        &-img {
+            width: 18px;
+            height: 18px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            z-index: 1;
+            width: 55px;
+            height: 55px;
+            animation: pulse 3s infinite;
         }
     }
 
@@ -214,6 +252,16 @@
             color: $first_color;
         }
     }
+
+    &__flag {
+        position: absolute;
+        top: 20px;
+        z-index: 5;
+        &-img {
+            width: 82px;
+            height: 31px;
+        }
+    }
 }
 .swiper {
 }
@@ -229,5 +277,33 @@
     transition: all 0.1s;
     &::after {
         display: none;
+    }
+}
+
+@media (max-width: 1355px) {
+    .products {
+        &__group {
+            width: 850px;
+        }
+    }
+}
+@media (max-width: 890px) {
+    .products {
+        &__group {
+            width: 410px;
+        }
+        &__item {
+            &:nth-child(even) {
+                display: none;
+            }
+        }
+    }
+    
+}
+@media (max-width: 665px) {
+    .products {
+        &__group {
+            
+        }
     }
 }
