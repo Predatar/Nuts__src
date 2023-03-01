@@ -87,6 +87,9 @@
             align-items: center;
             justify-content: center;
             background-color: $first_color;
+            &::after {
+                display: none;
+            }
         }
         &-next {
             left: 70px;

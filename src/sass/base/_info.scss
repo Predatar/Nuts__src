@@ -58,7 +58,7 @@
 @media (max-width: 1024px) {
     .info {
         &__wrapper {
-            width: 400px;
+            width: 600px;
         }
         &__group {
             flex-wrap: wrap;
@@ -67,7 +67,7 @@
         }
     }
 }
-@media (max-width: 535px) {
+@media (max-width: 600px) {
     .info {
         &__title {
         }

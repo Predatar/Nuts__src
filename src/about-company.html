@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="css/style.about-company.min.css">
+</head>
+
+<body>
+    @@include('html/header.html', {})
+    <section class="promo">
+        <div class="promo__bg-img">
+            <img src="@img/about-company/garden.png" alt="garden" loading="lazy">
+        </div>
+        <div class="promo__path">
+            <a href="@html/index.html" class="promo__path-link">Главная</a>
+            <img src="@icons/arrow-path.svg" alt="arrow-path">
+            О производстве
+        </div>
+        <h1 class="promo__title">Орех Причерноморья</h1>
+        <div class="promo__subtitle">Единственный в Украине сад совместного выращивание фундука и грецкого ореха</div>
+        <div class="promo__play">
+            <div class="promo__play-img">
+                <img src="@icons/main/play.svg" alt="play">
+            </div>
+        </div>
+    </section>
+    @@include('html/about-manufacture.html', {theme: 'about-manufacturer_white'})
+    <section class="founder">
+        <div class="founder__wrapper">
+            <div class="founder__photo">
+                <img src="@img/about-company/founder.png" alt="founder" loading="lazy">
+            </div>
+            <div class="founder__info">
+                <div class="founder__info-title">
+                    Павел Тулба</div>
+                <div class="founder__info-subtitle">
+                    Учередитель и владелец <br>
+                    предприятия “Орех Причерноморья”
+                </div>
+                <div class="founder__info-quote">
+                    Главная наша цель – получить максимальную <br>
+                    прибыль с одного гектара.
+                </div>
+                <a href="#" class="founder__info-link">
+                    Написать нам
+                </a>
+            </div>
+            <div class="founder__history">
+                <div class="founder__history-title">
+                    История предприятия
+                </div>
+                <div class="founder__history-subtitle">
+                    Наше предприятие основано в 2012 году
+                    для закладки смешанного сада грецкого ореха и фундука. <br><br>
+                    На сегодня мы уже заложили более 100 гектаров сада и продолжаем расширять свои насаждения. Кроме выращивания грецкого ореха и фундука, мы занимаемся выращиванием саженцев, разведением и выращиванием овец, а также являемся первой в Украине компанией, приступившей к промышленному выращиванию трюфелей на корнях фундука. <br><br>
+                    Земля, которой пользуется кооператив, является собственностью членов нашего кооператива.
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('html/footer.html', {})
+    @@include('html/script.html', {})
+    <script src="js/script.about-manuf.js"></script>
+</body>
+
+</html>
