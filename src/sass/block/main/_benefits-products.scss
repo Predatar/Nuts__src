@@ -48,7 +48,7 @@
             opacity: 0.95;
             position: absolute;
             z-index: 0;
-            transition: all 1.5s;
+            transition: all 1s ease-in;
             transform: scaleY(0);
         }
         &:hover {
