@@ -46,3 +46,19 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .production {
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &__subtitle {
+            margin: 0 25px;
+            margin-top: 40px;
+            width: auto;
+            font-size: 17px;
+            line-height: 20px;
+        }
+    }
+}
