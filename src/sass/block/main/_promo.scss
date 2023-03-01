@@ -61,7 +61,25 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
+    .promo {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__subtitle {
+            margin-top: 21px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        &__play {
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+@media (max-width: 630px) {
     .promo {
         padding: 112px 0 125px;
         &__title {
