@@ -47,3 +47,44 @@
         color: $third_color;
     }
 }
+
+@media (max-width: 1355px) {
+    .info {
+        &__wrapper {
+            width: 885px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .info {
+        &__wrapper {
+            width: 400px;
+        }
+        &__group {
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: space-around;
+        }
+    }
+}
+@media (max-width: 535px) {
+    .info {
+        &__title {
+            font-size: 42px;
+            &::after {
+                font-size: 16px;
+            }
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__wrapper {
+            width: auto;
+        }
+        &__group {
+            gap: 8px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
