@@ -4,6 +4,7 @@
 
     &__slider {
         width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -16,6 +17,9 @@
 
     &__slide {
         width: 100%;
+        img {
+            object-fit: cover;
+        }
     }
 
     &__img {
@@ -47,9 +51,26 @@
         color: $default_color;
     }
 }
-.swiper {
+@media (max-width: 768px) {
+    .eco {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        &__subtitle {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
 }
-.swiper-wrapper {
-}
-.swiper-slide {
+@media (max-width: 535px) {
+    .eco {
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &__subtitle {
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 18px;
+        }
+    }
 }

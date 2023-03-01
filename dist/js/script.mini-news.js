@@ -10,14 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.mini-news__btn-prev'
         }
     });
-    if(swiper.isBeginning) {
+    if (swiper.isBeginning) {
         miniNewsBtnPrevImg.style.opacity = 0.5;
     }
     swiper.on('slideChange', () => {
-        if(swiper.isBeginning) {
+        if (swiper.isBeginning) {
             miniNewsBtnPrevImg.style.opacity = 0.5;
-        }
-        else if (swiper.isEnd) {
+        } else if (swiper.isEnd) {
             miniNewsBtnNextImg.style.opacity = 0.5;
         } else {
             miniNewsBtnPrevImg.style.opacity = 1;

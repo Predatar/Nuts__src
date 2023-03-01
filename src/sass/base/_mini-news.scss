@@ -122,7 +122,7 @@
         line-height: 20px;
         letter-spacing: 0.01em;
         color: $first_color;
-        transition: all .2s;
+        transition: all 0.2s;
     }
 
     &__link-img {
@@ -130,10 +130,93 @@
         width: 18px;
         height: 9px;
     }
+
+    &__btn {
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 225px;
+        height: 52px;
+        border: 1px solid $first_color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: $first_color;
+        transition: all 0.2s;
+        &:hover {
+            background-color: $first_color;
+            color: $default_color;
+        }
+    }
 }
-.swiper {
+
+@media (max-width: 1355px) {
+    .mini-news {
+        &__container {
+            width: 848px;
+        }
+        &__slider {
+            width: 848px;
+        }
+    }
 }
-.swiper-wrapper {
+@media (max-width: 890px) {
+    .mini-news {
+        &__container {
+            width: 408px;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &__title {
+
+        }
+        &__subtitle {
+            margin-top: 10px;
+        }
+        &__navigation {
+            margin-top: 20px;
+        }
+        &__slider {
+            width: 408px;
+        }
+    }
 }
-.swiper-slide {
+@media (max-width: 425px) {
+    .mini-news {
+        padding-left: 10px;
+        padding-right: 10px;
+        &__container {
+            width: auto;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &__subtitle {
+            margin-top: 10px;
+            text-align: left;
+        }
+        &__navigation {
+            margin-top: 20px;
+        }
+        &__slider {
+            width: auto;
+        }
+        &__slide {
+            width: 100%;
+        }
+        &__img {
+            img {
+                object-fit: cover;
+            }
+        }
+        &__btn {
+            margin-top: 50px;
+        }
+    }
 }
