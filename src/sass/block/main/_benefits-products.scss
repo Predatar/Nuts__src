@@ -103,3 +103,60 @@
         overflow: hidden;
     }
 }
+
+@media (max-width: 1355px) {
+    .benefits-products {
+        &__group {
+            width: 1146px;
+        }
+        &__group-item {
+            width: 364px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .benefits-products {
+        &__group {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__group-item {
+            margin-bottom: 25px;
+            width: 410px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media (max-width: 604px) {
+    .benefits-products {
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &__subtitle {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .benefits-products {
+        &__group {
+            padding: 0 10px;
+        }
+        &__group-bg-img {
+            img {
+                object-fit: cover;
+            }
+        }
+        &__group-item {
+            width: 100%;
+        }
+        &__group-title {
+            font-size: 28px;
+        }
+    }
+}

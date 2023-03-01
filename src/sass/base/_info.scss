@@ -70,19 +70,14 @@
 @media (max-width: 535px) {
     .info {
         &__title {
-            font-size: 42px;
-            &::after {
-                font-size: 16px;
-            }
         }
         &__subtitle {
-            font-size: 16px;
         }
         &__wrapper {
             width: auto;
         }
         &__group {
-            gap: 8px;
+            gap: 20px;
             flex-direction: column;
             align-items: center;
         }
