@@ -1,0 +1,139 @@
+.mini-news {
+    padding: 84px 0 90px;
+    background-color: $second_bg_color;
+
+    &__container {
+        margin: 0 auto;
+        width: 1290px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 53px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__subtitle {
+        margin-top: 43px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__navigation {
+        display: flex;
+    }
+
+    &__btn {
+        &-prev,
+        &-next {
+            width: 70px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $first_color;
+        }
+        &-img {
+            width: 22px;
+            height: 18px;
+        }
+    }
+
+    &__slider {
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 1290px;
+    }
+
+    &__slider-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slide {
+        padding-bottom: 34px;
+        width: 408px;
+        background-color: $default_color;
+    }
+
+    &__img {
+        width: 100%;
+        height: 270px;
+    }
+
+    &__date {
+        margin-top: 28px;
+        margin-left: 24px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: $fourth_color;
+    }
+
+    &__article {
+        margin: 16px 80px 0 24px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__subarticle {
+        margin: 16px 37px 0 24px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__link {
+        margin-top: 30px;
+        margin-left: 24px;
+        width: 200px;
+        display: flex;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: $first_color;
+        transition: all .2s;
+    }
+
+    &__link-img {
+        margin-left: 8px;
+        width: 18px;
+        height: 9px;
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}

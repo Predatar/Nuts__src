@@ -220,6 +220,7 @@
             line-height: 18px;
             letter-spacing: 0.02em;
             color: $third_color;
+            transition: all 0.3s;
             position: relative;
             &::after {
                 content: '';
