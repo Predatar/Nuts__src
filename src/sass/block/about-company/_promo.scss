@@ -1,5 +1,5 @@
 .promo {
-    padding: 36px 315px 139px;
+    padding: 36px 0 139px;
     position: relative;
 
     &__bg-img {
@@ -12,6 +12,11 @@
         img {
             object-fit: cover;
         }
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        width: 1290px;
     }
 
     &__path {
@@ -86,6 +91,23 @@
     }
 }
 
+@media (max-width: 1355px) {
+    .promo {
+        &__wrapper {
+            margin: 0 33px;
+            width: auto;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .promo {
+        &__wrapper {
+            margin: 0 25px;
+            width: auto;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .promo {
         &__title {
@@ -106,7 +128,7 @@
 }
 @media (max-width: 630px) {
     .promo {
-        padding: 112px 0 125px;
+        padding-bottom: 125px;
         &__title {
             font-size: 28px;
             line-height: 33px;
