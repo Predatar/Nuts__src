@@ -1,0 +1,38 @@
+.info-for-clients {
+    padding: 81px 0 116px;
+
+    &__wrapper {
+        margin: 0 auto;
+        width: 1290px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        width: 420px;
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 53px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__subtitle {
+        width: 356px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $third_color;
+    }
+
+    &__text {
+        width: 330px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $third_color;
+    }
+}
