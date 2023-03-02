@@ -46,6 +46,10 @@
         letter-spacing: 0.02em;
         color: $third_color;
     }
+
+    &_dark {
+        background-color: $second_bg_color;
+    }
 }
 
 @media (max-width: 1355px) {

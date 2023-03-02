@@ -16,7 +16,7 @@
     }
 
     &__info {
-        width: 375px;
+        width: 384px;
     }
 
     &__info-title {
@@ -45,11 +45,20 @@
         font-style: italic;
         font-weight: 500;
         font-size: 15px;
-        line-height: 13px;
         letter-spacing: 0.01em;
+        position: relative;
+        &::before {
+            content: url('../icons/about-company/quotes.svg');
+            width: 26px;
+            height: 18px;
+            position: absolute;
+            left: -38px;
+            top: -6px;
+        }
     }
 
     &__info-link {
+        margin-top: 64px;
         width: 188px;
         height: 52px;
         border: 1px solid #337d5a;
@@ -63,6 +72,7 @@
         line-height: 16px;
         letter-spacing: 0.02em;
         color: $first_color;
+        transition: all 0.2s;
         &:hover {
             color: $default_color;
             background-color: $first_color;
@@ -71,7 +81,7 @@
 
     &__history {
         padding: 31px 34px 43px 47px;
-        width: 498px;
+        width: 453px;
         height: 100%;
         background-color: $first_color;
     }
