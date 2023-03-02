@@ -1,0 +1,192 @@
+.founder {
+    padding: 126px 0 64px;
+    background-color: $second_bg_color;
+
+    &__wrapper {
+        margin: 0 auto;
+        width: 1290px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__photo {
+        width: 342px;
+        height: 493px;
+    }
+
+    &__info {
+        width: 384px;
+    }
+
+    &__info-title {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__info-subtitle {
+        margin-top: 18px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__info-quote {
+        margin-top: 44px;
+        margin-left: 38px;
+        font-family: 'Raleway';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 0.01em;
+        position: relative;
+        &::before {
+            content: url('../icons/about-company/quotes.svg');
+            width: 26px;
+            height: 18px;
+            position: absolute;
+            left: -38px;
+            top: -6px;
+        }
+    }
+
+    &__info-link {
+        margin-top: 64px;
+        width: 188px;
+        height: 52px;
+        border: 1px solid #337d5a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $first_color;
+        transition: all 0.2s;
+        &:hover {
+            color: $default_color;
+            background-color: $first_color;
+        }
+    }
+
+    &__history {
+        padding: 31px 34px 43px 47px;
+        width: 453px;
+        height: 100%;
+        background-color: $first_color;
+    }
+
+    &__history-title {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.01em;
+        color: $default_color;
+    }
+
+    &__history-subtitle {
+        margin-top: 38px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: $default_color;
+    }
+}
+
+@media (max-width: 1355px) {
+    .founder {
+        &__wrapper {
+            margin: 0 25px;
+            width: auto;
+            flex-wrap: wrap;
+        }
+        &__info {
+            margin: 0 10px;
+        }
+    }
+}
+@media (max-width: 1265px) {
+    .founder {
+        &__wrapper {
+            margin: 0 auto;
+            width: 800px;
+            gap: 25px 0;
+        }
+        &__info {
+        }
+        &__history {
+            width: auto;
+            &-porting {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 890px) {
+    .founder {
+        &__wrapper {
+            width: 700px;
+        }
+        &__info {
+            width: 300px;
+        }
+    }
+}
+@media (max-width: 745px) {
+    .founder {
+        &__wrapper {
+            margin: 0 25px;
+            width: auto;
+        }
+        &__photo {
+            width: 230px;
+            height: 331px;
+        }
+        &__info {
+            width: 300px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .founder {
+        &__wrapper {
+        }
+        &__info {
+            width: 230px;
+        }
+        &__history {
+            padding: 25px;
+        }
+    }
+}
+@media (max-width: 535px) {
+    .founder {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .founder {
+        &__wrapper {
+            margin: 0 10px;
+        }
+        &__info-link {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

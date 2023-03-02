@@ -293,17 +293,39 @@
             width: 410px;
         }
         &__item {
-            &:nth-child(even) {
+            &:nth-child(odd) {
                 display: none;
             }
         }
     }
     
 }
-@media (max-width: 665px) {
+@media (max-width: 425px) {
     .products {
+        margin: 0 10px;
         &__group {
-            
+            width: 100%;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__info {
+            padding-left: 10px;
+        }
+        &__buy {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__price {
+            &-text {
+                font-size: 13px;
+            }
+            &-cost {
+                font-size: 15px;
+            }
+            &-last {
+                font-size: 13px;
+            }
         }
     }
 }

@@ -69,10 +69,14 @@
     &__slide {
         width: 700px;
         height: 472px;
+        img {
+            object-fit: cover;
+        }
     }
 
     &__btn {
-        &-prev, &-next {
+        &-prev,
+        &-next {
             position: absolute;
             top: auto;
             bottom: 0 !important;
@@ -83,6 +87,9 @@
             align-items: center;
             justify-content: center;
             background-color: $first_color;
+            &::after {
+                display: none;
+            }
         }
         &-next {
             left: 70px;
@@ -99,9 +106,84 @@
     }
 }
 
-.swiper {
+@media (max-width: 1355px) {
+    .about-manufacturer {
+        &__container {
+            width: 1000px;
+        }
+        &__swiper-wrapper {
+            width: 500px;
+        }
+    }
 }
-.swiper-wrapper {
+@media (max-width: 1024px) {
+    .about-manufacturer {
+        &__container {
+            width: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__link {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__slide {
+            margin-top: 25px;
+        }
+    }
 }
-.swiper-slide {
+@media (max-width: 535px) {
+    .about-manufacturer {
+        padding-left: 25px;
+        padding-right: 25px;
+        &__wrapper {
+            margin: 0 25px;
+            width: auto;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &__subtitle {
+            font-size: 17px;
+            line-height: 20px;
+        }
+        &__slider {
+            width: 100%;
+        }
+        &__swiper-wrapper {
+            width: 400px;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .about-manufacturer {
+        padding-left: 10px;
+        padding-right: 10px;
+        &__wrapper {
+            margin: 0 10px;
+            width: auto;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &__subtitle {
+            font-size: 17px;
+            line-height: 20px;
+        }
+        &__slider {
+            width: 100%;
+        }
+        &__swiper-wrapper {
+            width: 310;
+            height: 350px;
+        }
+    }
 }

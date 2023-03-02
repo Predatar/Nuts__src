@@ -1,5 +1,5 @@
 .promo {
-    padding: 195px 0 139px;
+    padding: 36px 0 139px;
     position: relative;
 
     &__bg-img {
@@ -14,8 +14,38 @@
         }
     }
 
+    &__wrapper {
+        margin: 0 auto;
+        width: 1290px;
+    }
+
+    &__path {
+        display: flex;
+        align-items: center;
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $default_color;
+        &-link {
+            font-family: 'Raleway';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: $default_color;
+        }
+        img {
+            margin: 0 10px;
+            width: 12px;
+            height: 10px;
+        }
+    }
+
     &__title {
         margin: 0;
+        margin-top: 146px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 62px;
@@ -48,7 +78,7 @@
         align-items: center;
         border-radius: 50%;
         border: 2px solid #ffffff;
-        transition: all .2s;
+        transition: all 0.2s;
         &:hover {
             border: none;
             background-color: $first_color;
@@ -58,6 +88,23 @@
     &__play-img {
         width: 10px;
         height: 14px;
+    }
+}
+
+@media (max-width: 1355px) {
+    .promo {
+        &__wrapper {
+            margin: 0 33px;
+            width: auto;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .promo {
+        &__wrapper {
+            margin: 0 25px;
+            width: auto;
+        }
     }
 }
 
@@ -81,7 +128,7 @@
 }
 @media (max-width: 630px) {
     .promo {
-        padding: 112px 0 125px;
+        padding-bottom: 125px;
         &__title {
             font-size: 28px;
             line-height: 33px;

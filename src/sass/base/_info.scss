@@ -46,4 +46,44 @@
         letter-spacing: 0.02em;
         color: $third_color;
     }
+
+    &_dark {
+        background-color: $second_bg_color;
+    }
+}
+
+@media (max-width: 1355px) {
+    .info {
+        &__wrapper {
+            width: 885px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .info {
+        &__wrapper {
+            width: 600px;
+        }
+        &__group {
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: space-around;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .info {
+        &__title {
+        }
+        &__subtitle {
+        }
+        &__wrapper {
+            width: auto;
+        }
+        &__group {
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

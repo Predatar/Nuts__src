@@ -60,3 +60,56 @@
         color: $default_color;
     }
 }
+
+@media (max-width: 1200px) {
+    .target {
+        &__title {
+            width: 800px;
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    .target {
+        &__title {
+            width: 600px;
+        }
+
+        &__play {
+        }
+
+        &__play-img {
+        }
+
+        &__subtitle {
+        }
+    }
+}
+@media (max-width: 604px) {
+    .target {
+        &__title {
+            margin: 0 25px;
+            width: auto;
+            font-size: 36px;
+        }
+        &__play {
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 535px) {
+    .target {
+        &__title {
+            margin: 0 25px;
+            width: auto;
+            font-size: 30px;
+        }
+        &__play {
+            margin-top: 30px;
+        }
+        &__subtitle {
+            margin: 28px 10px 0;
+            font-size: 20px;
+        }
+    }
+}
