@@ -111,6 +111,7 @@
 @media (max-width: 1024px) {
     .promo {
         &__title {
+            margin-top: 142px;
             font-size: 36px;
         }
 
@@ -129,6 +130,10 @@
 @media (max-width: 630px) {
     .promo {
         padding-bottom: 125px;
+
+        &__wrapper {
+            margin: 0 10px;
+        }
         &__title {
             font-size: 28px;
             line-height: 33px;

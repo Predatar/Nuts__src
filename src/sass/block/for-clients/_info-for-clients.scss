@@ -36,3 +36,51 @@
         color: $third_color;
     }
 }
+
+@media (max-width: 1440px) {
+    .info-for-clients {
+        &__wrapper {
+            width: 1125px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .info-for-clients {
+        &__wrapper {
+            margin: 0 25px;
+            width: auto;
+            flex-direction: column;
+        }
+        &__title {
+            text-align: center;
+            width: auto;
+            br {
+                display: none;
+            }
+        }
+        &__subtitle {
+            margin-top: 25px;
+            width: auto;
+            text-align: center;
+            br {
+                display: none;
+            }
+        }
+        &__text {
+            width: auto;
+            text-align: center;
+            br {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 630px) {
+    .info-for-clients {
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+        }
+    }
+}
