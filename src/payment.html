@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата и доставка</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="css/style.payment.min.css">
+</head>
+
+<body>
+    @@include('html/header.html', {})
+    <section class="promo">
+        <div class="promo__bg-img">
+            <img src="@img/payment/promo_bg.png" alt="nuts" loading="lazy">
+        </div>
+        <div class="promo__wrapper">
+            <div class="promo__path">
+                <a href="@html/index.html" class="promo__path-link">Главная</a>
+                <img src="@icons/arrow-path.svg" alt="arrow-path">
+                Оплата и доставка
+            </div>
+            <h1 class="promo__title">Оплата и доставка</h1>
+        </div>
+    </section>
+    <section class="information">
+        <div class="information__group">
+            <ul class="information__list">
+                <li class="information__list-item information__list-item_active">
+                    <div class="information__list-img">
+                        <img src="@icons/payment/wallet.svg" alt="wallet">
+                    </div>
+                    <div class="information__list-title">
+                        Оплата заказа
+                    </div>
+                </li>
+                <li class="information__list-item">
+                    <div class="information__list-img">
+                        <img src="@icons/payment/lorry.svg" alt="lorry">
+                    </div>
+                    <div class="information__list-title">
+                        Доставка партии
+                    </div>
+                </li>
+                <li class="information__list-item">
+                    <div class="information__list-img">
+                        <img src="@icons/payment/package.svg" alt="package">
+                    </div>
+                    <div class="information__list-title">
+                        Возврат товара
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="information__divider"></div>
+        <div class="information__tabs">
+            <div class="information__tab information__tab_active">
+                <div class="information__tab-wrapper">
+                    <div class="information__tab-title">
+                        Способы оплаты
+                    </div>
+                    <ul class="calculation">
+                        <li class="calculation__item">
+                            <div class="calculation__img">
+                                <img src="@icons/payment/museum.svg" alt="museum">
+                            </div>
+                            <div class="calculation__title">
+                                Безналичный расчет
+                            </div>
+                            <div class="calculation__text">
+                                Вы можете выбрать “получить реквизиты” <span></span>
+                                для дальнейшей оплаты на карту, или в терминалах.
+                            </div>
+                        </li>
+                        <li class="calculation__item">
+                            <div class="calculation__img">
+                                <img src="@icons/payment/bank-card.svg" alt="bank-card">
+                            </div>
+                            <div class="calculation__title">
+                                Оплата с помощью банковской карты
+                            </div>
+                            <div class="calculation__text">
+                                Оплатите Ваш заказ картой любого банка онлайн
+                                (LiqPay/Приват24)
+                            </div>
+                        </li>
+                        <li class="calculation__item">
+                            <div class="calculation__img">
+                                <img src="@icons/payment/mini-wallet.svg" alt="mini-wallet">
+                            </div>
+                            <div class="calculation__title">
+                                Наличный расчет
+                            </div>
+                            <div class="calculation__text">
+                                Оплата заказов наложенным платежом в отделении
+                                Новой Почты, или наличными курьерами
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information__img">
+                    <img src="@img/payment/credit-card.png" alt="man with credit card">
+                </div>
+            </div>
+            <div class="information__tab">
+                <div class="information__tab-wrapper">
+                    <div class="information__tab-title">
+                        Способы оплаты
+                    </div>
+                    <ul class="calculation">
+                        <li class="calculation__item">
+                            <div class="calculation__img">
+                                <img src="@icons/payment/museum.svg" alt="museum">
+                            </div>
+                            <div class="calculation__title">
+                                Безналичный расчет
+                            </div>
+                            <div class="calculation__text">
+                                Вы можете выбрать “получить реквизиты”
+                                для <br> дальнейшей оплаты на asd карту, или в терминалах.
+                            </div>
+                        </li>
+                        <li class="calculation__item">
+                            <div class="calculation__img">
+                                <img src="@icons/payment/bank-card.svg" alt="bank-card">
+                            </div>
+                            <div class="calculation__title">
+                                Оплата с помощью банковской карты
+                            </div>
+                            <div class="calculation__text">
+                                Оплатите Ваш заказ картой любого банка онлайн
+                                (LiqPay/Приват24)
+                            </div>
+                        </li>
+                        <li class="calculation__item">
+                            <div class="calculation__img">
+                                <img src="@icons/payment/mini-wallet.svg" alt="mini-wallet">
+                            </div>
+                            <div class="calculation__title">
+                                Наличный расчет
+                            </div>
+                            <div class="calculation__text">
+                                Оплата заказов наложенным платежом в отделении
+                                Новой Почты, или наличными курьерами
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information__img">
+                    <img src="@img/payment/credit-card.png" alt="man with credit card">
+                </div>
+            </div>
+            <div class="information__tab">
+                <div class="information__tab-wrapper">
+                    <div class="information__tab-title">
+                        Способы оплаты
+                    </div>
+                    <ul class="calculation">
+                        <li class="calculation__item">
+                            <div class="calculation__img">
+                                <img src="@icons/payment/museum.svg" alt="museum">
+                            </div>
+                            <div class="calculation__title">
+                                Безналичный расчет
+                            </div>
+                            <div class="calculation__text">
+                                Вы можете выбрать “получить реквизиты”
+                                для <br> дальнейшей оплаты на карту, или в терминалах.
+                            </div>
+                        </li>
+                        <li class="calculation__item">
+                            <div class="calculation__img">
+                                <img src="@icons/payment/bank-card.svg" alt="bank-card">
+                            </div>
+                            <div class="calculation__title">
+                                Оплата с помощью банковской карты
+                            </div>
+                            <div class="calculation__text">
+                                Оплатите Ваш заказ картой любого банка онлайн
+                                (LiqPay/Приват24)
+                            </div>
+                        </li>
+                        <li class="calculation__item">
+                            <div class="calculation__img">
+                                <img src="@icons/payment/mini-wallet.svg" alt="mini-wallet">
+                            </div>
+                            <div class="calculation__title">
+                                Наличный расчет
+                            </div>
+                            <div class="calculation__text">
+                                Оплата заказов наложенным платежом в отделении
+                                Новой Почты, или наличными курьерами
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information__img">
+                    <img src="@img/payment/promo_bg.png" alt="man with credit card">
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('html/info.html', {theme: 'info_dark'})
+    <section class="target">
+        <div class="target__bg-img">
+            <img src="@img/profit.png" alt="a man with nuts in a box" loading="lazy">
+        </div>
+        <div class="target__title">Наша главная цель - получить максимальную прибыль с одного гектара</div>
+        <div class="target__play">
+            <div class="target__play-img">
+                <img src="@icons/main/play.svg" alt="play">
+            </div>
+        </div>
+        <div class="target__subtitle">Cмотреть видео о производстве</div>
+    </section>
+    @@include('html/footer.html', {})
+    @@include('html/script.html', {})
+    <script src="js/script.payment.js"></script>
+</body>
+
+</html>
