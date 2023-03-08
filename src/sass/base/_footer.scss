@@ -263,6 +263,10 @@
             }
         }
     }
+
+    &_dark {
+        background-color: $second_bg_color;
+    }
 }
 
 @media (max-width: 1355px) {

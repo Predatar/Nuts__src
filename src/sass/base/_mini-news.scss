@@ -153,6 +153,9 @@
             color: $default_color;
         }
     }
+    &_white {
+        background-color: $default_color;
+    }
 }
 
 @media (max-width: 1355px) {
