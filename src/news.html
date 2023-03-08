@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости и статьи</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="css/style.news.min.css">
+</head>
+
+<body>
+    @@include('html/header.html', {})
+    <section class="promo">
+        <div class="promo__wrapper">
+            <div class="promo__path">
+                <a href="@html/index.html" class="promo__path-link">Главная</a>
+                <img src="@icons/arrow-path.svg" alt="arrow-path">
+                Новости и статьи
+            </div>
+            <h1 class="promo__title">Новости и статьи</h1>
+            <div class="promo__subtitle">
+                Свежие новости и полезная информация
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="news__items">
+            <div class="main-news">
+                <div class="main-news__img">
+                    <img src="@img/news/news.png" alt="man" loading="lazy">
+                </div>
+                <div class="main-news__article">
+                    <div class="main-news__article-date">12.04.2019</div>
+                    <div class="main-news__article-title">Центр поддержки экспорта, <br>
+                        в студии Павел Тулба</div>
+                    <div class="main-news__article-descr">
+                        Сельскохозяйственный обслуживающий кооператив
+                        “Орех Причерноморья” предлагает своим клиентам
+                        выгодные условия сотрудничества.
+                        <br><br>
+                        Ореховый бизнес – один из наиболее перспективных
+                        в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность
+                        зарабатывать десятки тысяч долларов в год всего <br>
+                        на нескольких гектарах земли.
+                    </div>
+                    <a href="#" class="main-news__article-link">
+                        Читать
+                        <div class="main-news__article-link-img">
+                            <img src="@icons/arrow-link.svg" alt="arrow-link">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="news__items">
+            <div class="news-group">
+                <div class="news-group__item">
+                    <div class="news-group__img">
+                        <img src="@img/mini-news/news1.png" alt="news" loading="lazy">
+                    </div>
+                    <div class="news-group__date">
+                        12.04.2019
+                    </div>
+                    <div class="news-group__article">
+                        Центр поддержки экспорта, в студии
+                        Павел Тулба
+                    </div>
+                    <div class="news-group__subarticle">
+                        Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
+                        садоводов,
+                        не смотря на большой спрос в Европе и отличную...
+                    </div>
+                    <a href="#" class="news-group__link">
+                        Читать
+                        <div class="news-group__link-img">
+                            <img src="@icons/arrow-link.svg" alt="arrow-link">
+                        </div>
+                    </a>
+                </div>
+                <div class="news-group__item">
+                    <div class="news-group__img">
+                        <img src="@img/mini-news/news2.png" alt="news" loading="lazy">
+                    </div>
+                    <div class="news-group__date">
+                        12.04.2019
+                    </div>
+                    <div class="news-group__article">
+                        Центр поддержки экспорта, в студии
+                        Павел Тулба
+                    </div>
+                    <div class="news-group__subarticle">
+                        Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
+                        садоводов,
+                        не смотря на большой спрос в Европе и отличную...
+                    </div>
+                    <a href="#" class="news-group__link">
+                        Читать
+                        <div class="news-group__link-img">
+                            <img src="@icons/arrow-link.svg" alt="arrow-link">
+                        </div>
+                    </a>
+                </div>
+                <div class="news-group__item">
+                    <div class="news-group__img">
+                        <img src="@img/mini-news/news3.png" alt="news" loading="lazy">
+                    </div>
+                    <div class="news-group__date">
+                        12.04.2019
+                    </div>
+                    <div class="news-group__article">
+                        Центр поддержки экспорта, в студии
+                        Павел Тулба
+                    </div>
+                    <div class="news-group__subarticle">
+                        Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
+                        садоводов,
+                        не смотря на большой спрос в Европе и отличную...
+                    </div>
+                    <a href="#" class="news-group__link">
+                        Читать
+                        <div class="news-group__link-img">
+                            <img src="@icons/arrow-link.svg" alt="arrow-link">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="news__items">
+            <div class="news__items-wrapper">
+                <div class="news__item-play">
+                    <img src="@icons/main/play.svg" alt="play">
+                </div>
+                <div class="news__item-title">Проект UBHDP </div>
+                <div class="news__item-subtitle">Вчера к нам приезжал американский агроном Рон , спасибо
+                    Мельнику Евгению и проекту UBHDP за возможность получить консультацию
+                    от мировых специалистов!</div>
+            </div>
+            <div class="news__item-img">
+                <img src="@img/gallery/photo3.png" alt="photo">
+            </div>
+        </div>
+        <a href="#" class="news__link">Посмотреть еще</a>
+    </section>
+    @@include('html/footer.html', {theme: 'footer_dark'})
+    @@include('html/script.html', {})
+</body>
+
+</html>
