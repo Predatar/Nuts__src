@@ -218,15 +218,34 @@
         height: 9px;
     }
 }
+.mini-news {
+    padding: 0 !important;
+    &__container {
+        display: none !important;
+    }
+    &__slider {
+        margin-top: 0 !important;
+    }
+    &__slide {
+        padding-bottom: 0 !important;
+    }
+    &__btn {
+        display: none !important;
+    }
+}
 
 @media (max-width: 1355px) {
     .news {
-
+        &__item {
+            &-img {
+                width: 848px;
+            }
+        }
     }
     .main-news {
-
+        &__img {
+            width: 386px;
+        }
     }
-    .news-group {
-        
-    }
+    
 }

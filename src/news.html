@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости и статьи</title>
     @@include('html/head.html', {})
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.news.min.css">
 </head>
 
@@ -55,78 +56,7 @@
             </div>
         </div>
         <div class="news__items">
-            <div class="news-group">
-                <div class="news-group__item">
-                    <div class="news-group__img">
-                        <img src="@img/mini-news/news1.png" alt="news" loading="lazy">
-                    </div>
-                    <div class="news-group__date">
-                        12.04.2019
-                    </div>
-                    <div class="news-group__article">
-                        Центр поддержки экспорта, в студии
-                        Павел Тулба
-                    </div>
-                    <div class="news-group__subarticle">
-                        Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
-                        садоводов,
-                        не смотря на большой спрос в Европе и отличную...
-                    </div>
-                    <a href="#" class="news-group__link">
-                        Читать
-                        <div class="news-group__link-img">
-                            <img src="@icons/arrow-link.svg" alt="arrow-link">
-                        </div>
-                    </a>
-                </div>
-                <div class="news-group__item">
-                    <div class="news-group__img">
-                        <img src="@img/mini-news/news2.png" alt="news" loading="lazy">
-                    </div>
-                    <div class="news-group__date">
-                        12.04.2019
-                    </div>
-                    <div class="news-group__article">
-                        Центр поддержки экспорта, в студии
-                        Павел Тулба
-                    </div>
-                    <div class="news-group__subarticle">
-                        Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
-                        садоводов,
-                        не смотря на большой спрос в Европе и отличную...
-                    </div>
-                    <a href="#" class="news-group__link">
-                        Читать
-                        <div class="news-group__link-img">
-                            <img src="@icons/arrow-link.svg" alt="arrow-link">
-                        </div>
-                    </a>
-                </div>
-                <div class="news-group__item">
-                    <div class="news-group__img">
-                        <img src="@img/mini-news/news3.png" alt="news" loading="lazy">
-                    </div>
-                    <div class="news-group__date">
-                        12.04.2019
-                    </div>
-                    <div class="news-group__article">
-                        Центр поддержки экспорта, в студии
-                        Павел Тулба
-                    </div>
-                    <div class="news-group__subarticle">
-                        Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
-                        садоводов,
-                        не смотря на большой спрос в Европе и отличную...
-                    </div>
-                    <a href="#" class="news-group__link">
-                        Читать
-                        <div class="news-group__link-img">
-                            <img src="@icons/arrow-link.svg" alt="arrow-link">
-                        </div>
-                    </a>
-                </div>
-
-            </div>
+            @@include('html/mini-news.html', {theme: 'mini-news_white'})
         </div>
         <div class="news__items">
             <div class="news__items-wrapper">
@@ -146,6 +76,8 @@
     </section>
     @@include('html/footer.html', {theme: 'footer_dark'})
     @@include('html/script.html', {})
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.mini-news.js"></script>
 </body>
 
 </html>
