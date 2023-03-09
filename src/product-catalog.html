@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог продукции</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.product-catalog.min.css">
+</head>
+
+<body>
+    @@include('html/header.html', {})
+    <section class="promo">
+        <div class="promo__bg-img">
+            <img src="@img/catalog-promo-bg.png" alt="nuts">
+        </div>
+        <div class="promo__wrapper">
+            <div class="promo__path">
+                <a href="@html/index.html" class="promo__path-link">Главная</a>
+                <img src="@icons/arrow-path.svg" alt="arrow-path">
+                Каталог
+            </div>
+            <h1 class="promo__title">Каталог продукции</h1>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="filter">
+            <div class="filter__title">
+                Фильтр
+                <div class="filter__img">
+                    <img src="@icons/settings.svg" alt="settings">
+                </div>
+            </div>
+            <div class="filter__taste">
+                <div class="filter__selected">
+                    Вкус
+                </div>
+                <div class="select">
+                    <div class="select-item">
+                        Вкусный
+                    </div>
+                </div>
+            </div>
+            <div class="filter__mass">
+                <div class="filter__selected">
+                    Масса
+                </div>
+                <div class="select">
+                    <div class="select-item">
+                        Вкусный
+                    </div>
+                </div>
+            </div>
+            <div class="filter__cost">
+                Стоимость
+                <div class="filter__cost-img">
+                    <img src="@icons/" alt="">
+                </div>
+            </div>
+            <div class="filter__action"></div>
+        </div>
+        @@include('html/products.html', {})
+    </section>
+    <section class="about-nuts">
+        <div class="about-nuts__wrapper">
+            <div class="about-nuts__title">
+                Экологически чистый
+                грецкий орех
+            </div>
+            <div class="about-nuts__subtitle">
+                Оптом, и в розницу
+            </div>
+            <div class="about-nuts__text">
+                Сельскохозяйственный обслуживающий кооператив
+                “Орех Причерноморья” выращивает смешанные сады
+                ореха грецкого с фундуком, а также ореха грецкого
+                с шиповником, на площади более 150 гектаров.
+                Помимо этого кооператив занимается выращиванием
+                посадочного материала, саженцов привитого и непривитого
+                грецкого ореха, фундука и шиповника.
+                Орех Причерноморья – это первый и единственный в Украине
+                сад по совместному выращиванию фундука и грецкого ореха
+            </div>
+        </div>
+        <div class="swiper about-nuts__slider">
+            <div class="swiper-wrapper about-nuts__slider-wrapper">
+                <div class="swiper-slide about-nuts__slider">
+                    <img src="@img/nuts.png" alt="nuts">
+                </div>
+            </div>
+            <div class="swiper-button-prev about-nuts__btn-prev">
+                
+            </div>
+            <div class="swiper-button-next about-nuts__btn-next">
+                
+            </div>
+        </div>
+    </section>
+    @@include('html/footer.html', {})
+    @@include('html/script.html', {})
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+</body>
+
+</html>
