@@ -52,9 +52,6 @@
                 left: 0;
             }
         }
-        &_hidden {
-            display: none;
-        }
     }
 
     &__group-side {
@@ -163,6 +160,9 @@
             color: $default_color;
             background-color: $first_color;
         }
+    }
+    &_hidden {
+        display: none;
     }
 }
 @media (max-width: 1355px) {
