@@ -1,0 +1,30 @@
+.promo {
+    padding: 36px 0 60px;
+
+    &__path {
+        margin: 0 auto;
+        width: 1290px;
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $fourth_color;
+        img {
+            margin: 0 10px;
+            width: 12px;
+            height: 10px;
+        }
+    }
+
+    &__path-link {
+        margin: 0 auto;
+        width: 1290px;
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $fourth_color;
+    }
+}
