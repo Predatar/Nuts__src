@@ -1,0 +1,175 @@
+.about-nuts {
+    padding: 100px 0 90px;
+    background-color: $second_bg_color;
+
+    &__container {
+        margin: 0 auto;
+        width: 1290px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        width: 527px;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 46px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__subtitle {
+        margin-top: 30px;
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 50px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__text {
+        width: 450px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+
+        &-wrapper {
+            margin-top: 30px;
+            height: 274px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                position: relative;
+                width: 2px;
+            }
+            &::-webkit-scrollbar-button {
+                display: none;
+            }
+            &::-webkit-scrollbar-thumb {
+                position: absolute;
+                width: 6px;
+                height: 35px;
+                background-color: $first_color;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: #e2e2e2;
+            }
+        }
+    }
+
+    &__slider {
+        position: relative;
+        margin: 0;
+    }
+
+    &__slider-wrapper {
+        width: 700px;
+    }
+
+    &__slide {
+        width: 700px;
+        height: auto;
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__btn-prev,
+    &__btn-next {
+        position: absolute;
+        top: auto;
+        bottom: 0 !important;
+        left: 0;
+        width: 70px;
+        height: 58px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        background-color: $first_color;
+        &::after {
+            display: none;
+        }
+    }
+
+    &__btn-next {
+        left: 70px;
+    }
+    &__btn-img {
+        width: 22px;
+        height: 18px;
+    }
+}
+@media (max-width: 1355px) {
+    .about-nuts {
+        &__container {
+            margin: 0 25px;
+            width: auto;
+        }
+        &__slider {
+        }
+        &__slider-wrapper {
+            width: 500px;
+        }
+        &__slide {
+            width: 500px;
+        }
+    }
+}
+@media (max-width: 1125px) {
+    .about-nuts {
+        &__wrapper {
+            width: 420px;
+        }
+        &__text {
+            width: 400px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .about-nuts {
+        padding: 50px 0 40px;
+        &__container {
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+}
+@media (max-width: 535px) {
+    .about-nuts {
+        &__container {
+            margin: 0 10px;
+        }
+        &__wrapper {
+            width: auto;
+        }
+        &__text {
+            width: auto;
+            &-wrapper {
+                padding-right: 10px;
+            }
+        }
+        &__slider {
+            width: 100%;
+        }
+        &__slider-wrapper {
+            width: auto;
+        }
+        &__slide {
+            width: auto;
+        }
+    }
+}
+@media (max-width: 375px) {
+    .about-nuts {
+        &__title {
+            font-size: 36px;
+        }
+    }
+}

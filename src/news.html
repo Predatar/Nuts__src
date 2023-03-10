@@ -69,14 +69,14 @@
                     от мировых специалистов!</div>
             </div>
             <div class="news__item-img">
-                <img src="@img/gallery/photo3.png" alt="photo">
+                <img src="@img/gallery/photo3.png" alt="photo" loading="lazy">
             </div>
         </div>
         <a href="#" class="news__link">Посмотреть еще</a>
     </section>
     @@include('html/footer.html', {theme: 'footer_dark'})
     @@include('html/script.html', {})
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
     <script src="js/script.mini-news.js"></script>
 </body>
 

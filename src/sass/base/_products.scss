@@ -262,6 +262,18 @@
             height: 31px;
         }
     }
+
+    &-button {
+        &-prev, &-next {
+            width: 23px;
+            height: 19px;
+            display: none;
+            transition: all 0.1s;
+            &::after {
+                display: none;
+            }
+        }   
+    }
 }
 .swiper {
 }
@@ -271,13 +283,7 @@
 }
 .swiper-button-prev,
 .swiper-button-next {
-    width: 23px;
-    height: 19px;
-    display: none;
-    transition: all 0.1s;
-    &::after {
-        display: none;
-    }
+    
 }
 
 @media (max-width: 1355px) {

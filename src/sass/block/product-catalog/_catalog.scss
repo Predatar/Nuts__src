@@ -1,0 +1,204 @@
+.catalog {
+    padding: 70px 0 96px;
+}
+.filter {
+    margin: 0 auto;
+    width: 1290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+        display: flex;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__img {
+        margin-left: 12px;
+        width: 22px;
+        height: 22px;
+    }
+
+    &__container {
+        width: 482px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__subcontainer {
+        width: 584px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__taste {
+        padding: 15px;
+        width: 283px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            border-color: $first_color;
+        }
+        &-img {
+            width: 13px;
+            height: 9px;
+            img {
+                vertical-align: top;
+            }
+        }
+    }
+
+    &__selected {
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__mass {
+        padding: 15px;
+        width: 171px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            border-color: $first_color;
+        }
+        &-img {
+            width: 13px;
+            height: 9px;
+            img {
+                vertical-align: top;
+            }
+        }
+    }
+
+    &__cost {
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+        svg {
+            fill: $first_color;
+        }
+        &-down {
+            svg {
+                fill: $fourth_color;
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+    }
+    &__btn {
+        &-apply {
+            width: 150px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $first_color;
+            border: 1px solid #337d5a;
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.01em;
+            color: $default_color;
+            cursor: pointer;
+            transition: all 0.2s;
+            &:hover {
+                background-color: $default_color;
+                color: $first_color;
+            }
+        }
+        &-reset {
+            margin-left: 47px;
+            display: flex;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+            font-family: 'Raleway';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.01em;
+            color: $fourth_color;
+            cursor: pointer;
+            img {
+                margin-right: 8px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}
+.select {
+    display: none;
+}
+.select-item {
+}
+
+@media (max-width: 1355px) {
+    .filter {
+        width: 850px;
+        flex-wrap: wrap;
+        gap: 25px;
+        &__subcontainer {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 890px) {
+    .filter {
+        width: 410px;
+        &__taste {
+            width: 240px;
+        }
+        &__btn {
+            &-reset {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .filter {
+        width: 300px;
+        &__container {
+            width: 300px;
+        }
+        &__subcontainer {
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        &__taste {
+            width: 150px;
+        }
+        &__mass {
+            width: 41.7%;
+        }
+    }
+}
