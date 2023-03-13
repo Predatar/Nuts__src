@@ -1,5 +1,5 @@
 .promo {
-    padding: 195px 0 139px;
+    padding: 194px 0 141px;
     position: relative;
 
     &__bg-img {
@@ -27,12 +27,12 @@
 
     &__subtitle {
         margin: 0 auto;
-        margin-top: 47px;
+        margin-top: 32px;
         width: 532px;
         font-family: 'Raleway';
         font-weight: 600;
         font-size: 25px;
-        line-height: 29px;
+        line-height: 30px;
         text-align: center;
         letter-spacing: 0.01em;
         color: $default_color;
@@ -40,7 +40,7 @@
 
     &__play {
         margin: 0 auto;
-        margin-top: 45px;
+        margin-top: 40px;
         width: 61px;
         height: 61px;
         display: flex;
@@ -48,7 +48,7 @@
         align-items: center;
         border-radius: 50%;
         border: 2px solid #ffffff;
-        transition: all .2s;
+        transition: all 0.2s;
         &:hover {
             border: none;
             background-color: $first_color;

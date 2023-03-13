@@ -1,5 +1,5 @@
 .header {
-    height: 179px;
+    height: 177px;
 
     &__top {
         height: 38px;
@@ -18,16 +18,18 @@
             display: flex;
             justify-content: space-between;
             &-item {
+                &:last-child {
+                    .header__top-link-img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
             }
         }
         &-link {
             &-img {
                 width: 13px;
                 height: 13px;
-                &:last-child {
-                    width: 16px;
-                    height: 16px;
-                }
             }
         }
         &-container {
@@ -71,7 +73,7 @@
             width: calc(761px * 100% / 1290px);
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
         }
         &-container2 {
             width: calc(397px * 100% / 761px);
@@ -174,6 +176,7 @@
     }
 
     &__bag {
+        margin-right: 6px;
         position: relative;
         &-counter {
             position: absolute;
@@ -196,7 +199,7 @@
     }
 
     &__bottom {
-        height: 56px;
+        padding: 23px 0 13px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -225,7 +228,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                bottom: calc(-100% - 2px);
+                bottom: calc(-100% + 4px);
                 left: 0;
                 width: 100%;
                 height: 3px;
@@ -247,6 +250,7 @@
 }
 .personal-discount {
     &_top {
+        margin-top: -2px;
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 14px;
@@ -281,7 +285,7 @@
         &-link {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             position: relative;
             &::after {
                 content: '';
@@ -316,6 +320,7 @@
     }
 
     &__registration {
+        margin-right: 22px;
         &-link {
             font-family: 'Raleway';
             font-weight: 500;
@@ -350,7 +355,7 @@
         width: 30px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         &-select {
             font-family: 'Raleway';
             font-weight: 500;

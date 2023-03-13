@@ -10,25 +10,24 @@
     }
 
     &__wrapper {
-        width: 480px;
+        width: 483px;
     }
 
     &__title {
+        margin-top: 26px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 45px;
         line-height: 53px;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 
     &__subtitle {
-        margin-top: 55px;
+        margin-top: 41px;
         font-family: 'Raleway';
         font-weight: 500;
         font-size: 16px;
-        line-height: 19px;
-        letter-spacing: 0.01em;
+        line-height: 26px;
         color: $third_color;
         span {
             font-weight: 600;
@@ -37,7 +36,7 @@
     }
 
     &__link {
-        margin-top: 53px;
+        margin-top: 44px;
         width: 170px;
         height: 52px;
         border: 1.5px solid #337d5a;
@@ -99,6 +98,32 @@
     &__btn-img {
         width: 22px;
         height: 18px;
+    }
+
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-45%, -104%);
+        z-index: 10;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 61px;
+        height: 61px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        transition: all 0.2s;
+        &:hover {
+            border: none;
+            background-color: $first_color;
+        }
+        img {
+            width: 10px;
+            height: 14px;
+        }
     }
 
     &_white {

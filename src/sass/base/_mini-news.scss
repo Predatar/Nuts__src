@@ -23,25 +23,25 @@
     }
 
     &__subtitle {
-        margin-top: 43px;
+        margin-top: 32px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 
     &__navigation {
+        margin-top: 9px;
         display: flex;
     }
 
     &__btn {
         &-prev,
         &-next {
-            width: 70px;
+            width: 71px;
             height: 58px;
             display: flex;
             align-items: center;
@@ -56,7 +56,7 @@
 
     &__slider {
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 64px;
         width: 1290px;
     }
 
@@ -77,8 +77,8 @@
     }
 
     &__date {
-        margin-top: 28px;
-        margin-left: 24px;
+        margin-top: 22px;
+        margin-left: 23px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
@@ -89,30 +89,29 @@
     }
 
     &__article {
-        margin: 16px 80px 0 24px;
+        margin: 10px 24px 0 23px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 23px;
         letter-spacing: 0.01em;
         color: $third_color;
     }
 
     &__subarticle {
-        margin: 16px 37px 0 24px;
+        margin: 12px 37px 0 24px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 
     &__link {
-        margin-top: 30px;
-        margin-left: 24px;
+        margin-top: 22px;
+        margin-left: 23px;
         width: 200px;
         display: flex;
         font-family: 'Raleway';
@@ -133,7 +132,7 @@
 
     &__btn {
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 64px;
         width: 225px;
         height: 52px;
         border: 1px solid $first_color;
@@ -176,7 +175,6 @@
             flex-direction: column;
         }
         &__title {
-
         }
         &__subtitle {
             margin-top: 10px;

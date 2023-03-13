@@ -11,7 +11,7 @@
 
     &__contacts {
         &-info {
-            margin-top: 67px;
+            margin-top: 72px;
             width: 308px;
             display: flex;
             align-items: center;
@@ -20,9 +20,11 @@
     }
 
     &__title {
+        margin-top: 10px;
+        margin-left: -3px;
         font-family: 'Raleway';
         font-weight: 800;
-        font-size: 45px;
+        font-size: 44px;
         line-height: 53px;
         letter-spacing: 0.01em;
         color: $third_color;
@@ -37,7 +39,9 @@
             height: 14px;
         }
         &-group {
+            height: 45px;
             display: flex;
+            justify-content: space-between;
             flex-direction: column;
         }
         &-number {
@@ -65,7 +69,7 @@
     }
 
     &__email {
-        margin-top: 48px;
+        margin-top: 45px;
         display: flex;
         &-img {
             margin-right: 15px;
@@ -83,7 +87,7 @@
     }
 
     &__office {
-        margin-top: 50px;
+        margin-top: 47px;
         &-wrapper {
             display: flex;
         }
@@ -97,11 +101,10 @@
             font-weight: 800;
             font-size: 17px;
             line-height: 20px;
-            letter-spacing: 0.01em;
             color: $third_color;
         }
         &-addres {
-            margin-top: 25px;
+            margin-top: 17px;
             margin-left: 30px;
             font-family: 'Montserrat';
             font-weight: 500;
@@ -113,7 +116,7 @@
     }
 
     &__manufacture {
-        margin-top: 44px;
+        margin-top: 37px;
         &-wrapper {
             display: flex;
             align-items: center;
@@ -128,11 +131,10 @@
             font-weight: 800;
             font-size: 17px;
             line-height: 20px;
-            letter-spacing: 0.01em;
             color: $third_color;
         }
         &-addres {
-            margin-top: 26px;
+            margin-top: 17px;
             margin-left: 30px;
             font-family: 'Montserrat';
             font-weight: 500;
@@ -172,6 +174,7 @@
             height: 53px;
         }
         &-title {
+            margin-top: 2px;
             font-family: 'Raleway';
             font-weight: 800;
             font-size: 15px;
@@ -187,6 +190,7 @@
         justify-content: space-between;
         align-items: center;
         &-item {
+            margin-top: 23px;
         }
         &-link {
             font-family: 'Raleway';
@@ -206,7 +210,7 @@
     &__licence {
         margin: 0 auto;
         width: 1290px;
-        height: 83px;
+        height: 70px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -382,11 +386,10 @@
             width: 100%;
         }
     }
-    
 }
 @media (max-width: 745px) {
     .footer {
-        &__info{
+        &__info {
             &-container {
                 width: 100%;
             }

@@ -1,30 +1,28 @@
 .benefits-products {
-    padding: 82px 0 100px;
+    padding: 84px 0 100px;
 
     &__title {
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 45px;
         line-height: 53px;
-        letter-spacing: 0.01em;
         text-align: center;
         color: $third_color;
     }
 
     &__subtitle {
-        margin-top: 43px;
+        margin-top: 30px;
         font-family: 'Raleway';
         font-weight: 500;
         font-size: 18px;
-        line-height: 22px;
+        line-height: 27px;
         text-align: center;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 
     &__group {
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 63px;
         width: 1290px;
         display: flex;
         justify-content: space-between;
@@ -58,6 +56,16 @@
             &::after {
                 transform: scaleY(1);
                 transition: all 0.5s;
+            }
+        }
+        &:first-child {
+            .benefits-products__img {
+                transform: rotate(23deg);
+            }
+        }
+        &:last-child {
+            .benefits-products__img {
+                width: 59px;
             }
         }
     }
