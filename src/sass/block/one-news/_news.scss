@@ -16,12 +16,11 @@
         font-weight: 700;
         font-size: 32px;
         line-height: 35px;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 
     &__date {
-        margin-top: 18px;
+        margin-top: 12px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
@@ -32,9 +31,12 @@
     }
 
     &__img {
-        margin-top: 35px;
+        margin-top: 30px;
         width: 100%;
         height: 595px;
+        &:last-of-type {
+            margin-top: 34px;
+        }
         img {
             object-fit: cover;
         }
@@ -45,15 +47,23 @@
         font-family: 'Raleway';
         font-weight: 500;
         font-size: 15.6px;
-        line-height: 25px;
+        line-height: 23px;
+        letter-spacing: 0.01em;
         color: $third_color;
+        &:last-of-type {
+            margin-top: 23px;
+        }
     }
 
     &__subtitle {
-        margin-top: 45px;
-        width: 460px;
+        margin-top: 37px;
+        width: 490px;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
         &:last-of-type {
-            margin-top: 28px;
+            margin-top: 35px;
         }
     }
 
@@ -72,7 +82,7 @@
     }
 
     &__list-group {
-        margin-top: 20px;
+        margin-top: 6px;
         padding-left: 18px;
         list-style: disc;
     }
@@ -91,7 +101,7 @@
     }
 }
 .aside {
-    margin-top: 145px;
+    margin-top: 128px;
     width: 260px;
     &__news {
         padding: 27px 20px 35px;
@@ -110,16 +120,16 @@
 
     &__item {
         &-group {
-            margin-top: 24px;
+            margin-top: 20px;
             display: flex;
             flex-direction: column;
-            gap: 46px;
+            gap: 40px;
         }
     }
 
     &__img {
         width: 220px;
-        height: 193px;
+        height: 162px;
         img {
             object-fit: cover;
         }
@@ -128,7 +138,6 @@
     &__date {
         margin-top: 14px;
         font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 500;
         font-size: 13px;
         line-height: 22px;
@@ -137,18 +146,16 @@
     }
 
     &__article {
-        margin-top: 14px;
+        margin-top: 8px;
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 700;
         font-size: 15px;
-        line-height: 16px;
-        letter-spacing: 0.01em;
+        line-height: 18px;
         color: $third_color;
     }
 
     &__link {
-        margin-top: 10px;
+        margin-top: 8px;
         display: flex;
         font-family: 'Raleway';
         font-style: normal;
@@ -166,7 +173,7 @@
     }
 
     &__ad {
-        margin-top: 26px;
+        margin-top: 22px;
         padding: 43px 20px 29px;
         background-color: $first_color;
     }
