@@ -26,18 +26,16 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 16px;
-        letter-spacing: 0.02em;
         color: $default_color;
         &-link {
             font-family: 'Raleway';
             font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 16px;
-            letter-spacing: 0.02em;
             color: $default_color;
         }
         img {
-            margin: 0 10px;
+            margin: 0 11px;
             width: 12px;
             height: 10px;
         }
@@ -45,7 +43,7 @@
 
     &__title {
         margin: 0;
-        margin-top: 146px;
+        margin-top: 142px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 62px;
@@ -57,20 +55,29 @@
 
     &__subtitle {
         margin: 0 auto;
-        margin-top: 47px;
+        margin-top: 32px;
         width: 532px;
         font-family: 'Raleway';
         font-weight: 600;
         font-size: 25px;
-        line-height: 29px;
+        line-height: 30px;
         text-align: center;
         letter-spacing: 0.01em;
         color: $default_color;
+        pre {
+            font-family: 'Raleway';
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: $default_color;
+        }
     }
 
     &__play {
         margin: 0 auto;
-        margin-top: 45px;
+        margin-top: 40px;
         width: 61px;
         height: 61px;
         display: flex;

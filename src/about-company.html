@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О компании</title>
+    <title>О компании - Орех Причерноморья</title>
     @@include('html/head.html', {})
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.about-company.min.css">
@@ -24,7 +24,8 @@
                 О производстве
             </div>
             <h1 class="promo__title">Орех Причерноморья</h1>
-            <div class="promo__subtitle">Единственный в Украине сад совместного выращивание фундука и грецкого ореха</div>
+            <div class="promo__subtitle">Единственный в Украине сад совместного выращивание фундука и грецкого ореха
+            </div>
             <div class="promo__play">
                 <div class="promo__play-img">
                     <img src="@icons/main/play.svg" alt="play">
@@ -32,7 +33,9 @@
             </div>
         </div>
     </section>
-    @@include('html/about-manufacture.html', {theme: 'about-manufacturer_white'})
+    @@include('html/about-manufacture.html', {theme: 'about-manufacturer_white',textMod: 'about-manufacturer_show',
+    linkMod:
+    'about-manufacturer_hidden'})
     <section class="founder">
         <div class="founder__wrapper">
             <div class="founder__photo">
@@ -59,9 +62,14 @@
                 </div>
                 <div class="founder__history-subtitle">
                     Наше предприятие основано в 2012 году
-                    <br class="founder__history-porting"> для  закладки смешанного сада грецкого ореха <br class="founder__history-porting"> и фундука. <br><br>
-                    На сегодня мы уже заложили более 100 гектаров <br class="founder__history-porting"> сада и продолжаем расширять свои насаждения. Кроме выращивания грецкого ореха и фундука, мы занимаемся выращиванием саженцев, разведением и выращиванием овец, а также являемся первой в Украине компанией, приступившей к промышленному выращиванию трюфелей на корнях фундука. <br><br>
-                    Земля, которой пользуется кооператив, <br class="founder__history-porting"> является собственностью членов нашего кооператива.
+                    <br class="founder__history-porting"> для закладки смешанного сада грецкого ореха <br
+                        class="founder__history-porting"> и фундука. <br><br>
+                    На сегодня мы уже заложили более 100 гектаров <br class="founder__history-porting"> сада и
+                    продолжаем расширять свои насаждения. Кроме выращивания грецкого ореха и фундука, мы занимаемся
+                    выращиванием саженцев, разведением и выращиванием овец, а также являемся первой в Украине компанией,
+                    приступившей к промышленному выращиванию трюфелей на корнях фундука. <br><br>
+                    Земля, которой пользуется кооператив, <br class="founder__history-porting"> является собственностью
+                    членов нашего кооператива.
                 </div>
             </div>
         </div>
