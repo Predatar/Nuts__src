@@ -1,5 +1,5 @@
 .promo {
-    padding: 36px 0 70px;
+    padding: 35px 0 65px;
     position: relative;
 
     &__wrapper {
@@ -25,7 +25,7 @@
             color: $fourth_color;
         }
         img {
-            margin: 0 10px;
+            margin: 0 8px;
             width: 12px;
             height: 10px;
         }
@@ -33,7 +33,7 @@
 
     &__title {
         margin: 0 auto;
-        margin-top: 15px;
+        margin-top: 12px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 45px;
@@ -45,7 +45,7 @@
 
     &__subtitle {
         margin: 0 auto;
-        margin-top: 31px;
+        margin-top: 20px;
         width: 532px;
         font-family: 'Raleway';
         font-style: normal;
@@ -53,7 +53,6 @@
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 
