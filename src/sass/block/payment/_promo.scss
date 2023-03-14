@@ -1,5 +1,5 @@
 .promo {
-    padding: 36px 0 200px;
+    padding: 36px 0 108px;
     position: relative;
 
     &__bg-img {
@@ -37,7 +37,7 @@
             color: $default_color;
         }
         img {
-            margin: 0 10px;
+            margin: 0 8px;
             width: 12px;
             height: 10px;
         }
@@ -45,12 +45,11 @@
 
     &__title {
         margin: 0;
-        margin-top: 191px;
+        margin-top: 66px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 62px;
         line-height: 73px;
-        letter-spacing: 0.01em;
         color: $default_color;
         text-align: center;
     }

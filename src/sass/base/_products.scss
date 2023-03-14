@@ -1,5 +1,5 @@
 .products {
-    padding-top: 80px;
+    padding-top: 66px;
 
     &__group {
         margin: 0 auto;
@@ -85,7 +85,7 @@
     }
 
     &__info {
-        padding: 23px 22px 15px;
+        padding: 20px 19px 15px;
     }
 
     &__title {
@@ -98,7 +98,8 @@
     }
 
     &__article-number {
-        margin-top: 14px;
+        margin-left: 2px;
+        margin-top: 7px;
         font-family: 'Montserrat';
         font-weight: 500;
         font-size: 15px;
@@ -108,18 +109,18 @@
     }
 
     &__descr {
-        margin-top: 16px;
+        margin-top: 11px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
-        line-height: 17px;
+        line-height: 19px;
         letter-spacing: 0.01em;
         color: $alternate_text_color;
     }
 
     &__container {
-        margin-top: 26px;
+        margin-top: 18px;
         display: flex;
         justify-content: space-between;
     }
@@ -157,6 +158,7 @@
     }
 
     &__packaging {
+        margin-right: 12px;
         width: auto;
         display: flex;
         align-items: center;
@@ -202,7 +204,7 @@
         align-items: center;
         justify-content: space-between;
         &-text {
-            margin-right: 9px;
+            margin-right: 7px;
             font-family: 'Montserrat';
             font-weight: 600;
             font-size: 15px;
@@ -218,8 +220,14 @@
             line-height: 24px;
             letter-spacing: 0.01em;
             color: $first_color;
+            span {
+                margin-left: -2px;
+                font-size: 15px;
+                line-height: 18px;
+            }
         }
         &-last {
+            margin-top: 7px;
             font-family: 'Montserrat';
             font-weight: 500;
             font-size: 16px;
@@ -227,6 +235,11 @@
             letter-spacing: 0.01em;
             color: $fourth_color;
             text-decoration: line-through;
+            span {
+                margin-left: -2px;
+                font-size: 13px;
+                line-height: 16px;
+            }
         }
     }
 
@@ -255,6 +268,7 @@
 
     &__flag {
         position: absolute;
+        left: -3px;
         top: 20px;
         z-index: 5;
         &-img {
@@ -264,7 +278,8 @@
     }
 
     &-button {
-        &-prev, &-next {
+        &-prev,
+        &-next {
             width: 23px;
             height: 19px;
             display: none;
@@ -272,18 +287,8 @@
             &::after {
                 display: none;
             }
-        }   
+        }
     }
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-button-prev,
-.swiper-button-next {
-    
 }
 
 @media (max-width: 1355px) {
@@ -304,7 +309,6 @@
             }
         }
     }
-    
 }
 @media (max-width: 425px) {
     .products {

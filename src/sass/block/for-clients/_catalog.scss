@@ -12,7 +12,7 @@
     }
 
     &__list-item {
-        padding-bottom: 24px;
+        padding-bottom: 18px;
         display: flex;
         align-items: center;
         position: relative;
@@ -125,7 +125,7 @@
     }
 
     &__tab-link {
-        margin-top: 47px;
+        margin-top: 40px;
         width: 188px;
         height: 52px;
         display: flex;
@@ -158,18 +158,18 @@
             width: 1000px;
         }
         &__tabs {
-             width: 1000px;
+            width: 1000px;
         }
         &__tab {
-             width: 1000px;
-             &-wrapper {
+            width: 1000px;
+            &-wrapper {
                 margin-right: 40px;
-             }
-             &-img {
+            }
+            &-img {
                 img {
                     object-fit: cover;
                 }
-             }
+            }
         }
     }
 }

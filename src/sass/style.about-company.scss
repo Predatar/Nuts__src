@@ -2,6 +2,13 @@
 
 @import 'base/_header';
 @import 'block/about-company/promo';
+.about-manufacturer__wrapper {
+    width: 520px !important;
+}
+.about-manufacturer__subtitle {
+    margin-top: 45px !important;
+    line-height: 25px !important;
+}
 @import 'base/about-manufacture';
 @import 'block/about-company/founder';
 @import 'base/info';

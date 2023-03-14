@@ -18,7 +18,7 @@
     }
 
     &__subtitle {
-        margin-top: 32px;
+        margin-top: 22px;
         font-family: 'Raleway';
         font-weight: 500;
         font-size: 18px;
@@ -29,10 +29,10 @@
     }
 
     &__group {
-        margin-top: 70px;
+        margin-top: 66px;
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 25px;
     }
 
     &__container1 {
@@ -75,7 +75,7 @@
     }
 
     &__group-side-subtitle {
-        margin-top: 30px;
+        margin-top: 22px;
         margin-right: 50px;
         font-family: 'Montserrat';
         font-weight: 500;
@@ -88,7 +88,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -22%);
     }
 
     &__group-play {
@@ -122,13 +122,14 @@
         color: $default_color;
     }
     &__group-subtitle {
-        margin-top: 18px;
+        margin-top: 12px;
         width: 563px;
         font-family: 'Montserrat';
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
         text-align: center;
+        letter-spacing: 0.01em;
         color: $default_color;
     }
 
@@ -142,7 +143,7 @@
 
     &__link {
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 67px;
         width: 235px;
         height: 52px;
         display: flex;
@@ -160,9 +161,33 @@
             color: $default_color;
             background-color: $first_color;
         }
+        &-second {
+            display: none;
+            margin: 0 auto;
+            margin-top: 75px;
+            width: 201px;
+            height: 52px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #337d5a;
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: $first_color;
+            transition: all 0.2s;
+            &:hover {
+                color: $default_color;
+                background-color: $first_color;
+            }
+        }
     }
     &_hidden {
         display: none;
+    }
+    &_white {
+        background-color: $default_color;
     }
 }
 @media (max-width: 1355px) {
@@ -211,7 +236,7 @@
         }
         &__group {
             &-item {
-                &_wider{
+                &_wider {
                     height: 450px;
                 }
             }

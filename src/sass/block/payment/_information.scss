@@ -55,7 +55,6 @@
         line-height: 23px;
         letter-spacing: 0.01em;
         color: $third_color;
-        
     }
 
     &__divider {
@@ -97,15 +96,19 @@
     }
 }
 .calculation {
+    margin-top: 30px;
     &__item {
-        margin-top: 35px;
         width: 408px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        &:not(:first-child) {
+            margin-top: 43px;
+        }
     }
 
     &__img {
+        margin-left: 6px;
         width: 36px;
         height: 36px;
         display: flex;
@@ -147,7 +150,7 @@
     }
 
     &__text {
-        margin-top: 15px;
+        margin-top: 16px;
         font-family: 'Raleway';
         font-weight: 500;
         font-size: 16px;
