@@ -28,3 +28,26 @@
         }
     }
 }
+@media (max-width: 1355px) {
+    .promo {
+        &__wrapper {
+            margin: 0 33px;
+            width: auto;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .promo {
+        &__wrapper {
+            margin: 0 25px;
+            width: auto;
+        }
+    }
+}
+@media (max-width: 630px) {
+    .promo {
+        &__wrapper {
+            margin: 0 10px;
+        }
+    }
+}
