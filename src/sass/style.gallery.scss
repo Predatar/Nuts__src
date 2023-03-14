@@ -1,5 +1,21 @@
 @import 'base/variables';
 
 @import 'base/header';
+@import 'block/gallery/promo';
+.gallery__title {
+    display: none !important;
+}
+.gallery__subtitle {
+    display: none !important;
+}
+.gallery__group {
+    margin-top: 0 !important;
+}
+.gallery__link {
+    display: none !important;
+    &-second {
+        display: flex !important;
+    }
+}
 @import 'base/gallery';
 @import 'base/footer';

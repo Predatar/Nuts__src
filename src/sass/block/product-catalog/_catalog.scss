@@ -24,6 +24,7 @@
     }
 
     &__container {
+        margin-left: 10px;
         width: 482px;
         display: flex;
         justify-content: space-between;
@@ -154,6 +155,30 @@
             }
         }
     }
+    &__link {
+        margin: 0 auto;
+        margin-top: 74px;
+        width: 200px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $first_color;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: $first_color;
+        transition: all 0.2s;
+        &:hover {
+            background-color: $first_color;
+            color: $default_color;
+        }
+    }
+}
+.products {
+    padding-top: 81px !important;
 }
 .select {
     display: none;

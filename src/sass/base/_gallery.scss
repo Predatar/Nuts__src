@@ -161,9 +161,33 @@
             color: $default_color;
             background-color: $first_color;
         }
+        &-second {
+            display: none;
+            margin: 0 auto;
+            margin-top: 75px;
+            width: 201px;
+            height: 52px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #337d5a;
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: $first_color;
+            transition: all 0.2s;
+            &:hover {
+                color: $default_color;
+                background-color: $first_color;
+            }
+        }
     }
     &_hidden {
         display: none;
+    }
+    &_white {
+        background-color: $default_color;
     }
 }
 @media (max-width: 1355px) {

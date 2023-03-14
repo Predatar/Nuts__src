@@ -1,5 +1,5 @@
 .promo {
-    padding: 36px 0 100px;
+    padding: 36px 0 246px;
     position: relative;
 
     &__bg-img {
@@ -26,19 +26,16 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 16px;
-        letter-spacing: 0.02em;
         color: $default_color;
         &-link {
             font-family: 'Raleway';
             font-weight: 600;
             font-size: 14px;
             line-height: 16px;
-            letter-spacing: 0.02em;
             color: $default_color;
         }
         img {
-            margin-left: 6px;
-            margin-right: 10px;
+            margin: 0 9px;
             width: 12px;
             height: 10px;
         }
@@ -46,31 +43,31 @@
 
     &__title {
         margin: 0;
-        margin-top: 74px;
+        margin-top: 186px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 62px;
         line-height: 73px;
+        letter-spacing: 0.01em;
         color: $default_color;
         text-align: center;
     }
 
     &__subtitle {
         margin: 0 auto;
-        margin-top: 52px;
+        margin-top: 13px;
         width: 532px;
         font-family: 'Raleway';
-        font-weight: 600;
+        font-weight: 500;
         font-size: 25px;
-        line-height: 29px;
+        line-height: 30px;
         text-align: center;
-        letter-spacing: 0.01em;
         color: $default_color;
     }
 
     &__play {
         margin: 0 auto;
-        margin-top: 45px;
+        margin-top: 40px;
         width: 61px;
         height: 61px;
         display: flex;
@@ -129,10 +126,6 @@
 @media (max-width: 630px) {
     .promo {
         padding-bottom: 125px;
-
-        &__wrapper {
-            margin: 0 10px;
-        }
         &__title {
             font-size: 28px;
             line-height: 33px;
