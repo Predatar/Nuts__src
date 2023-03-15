@@ -7,7 +7,7 @@
         letter-spacing: 0.01em;
         line-height: 200px;
         text-align: center;
-        background: url('@img/404-bg.png') center center/cover no-repeat;
+        background: url('@img/404-bg.png') center center/contain no-repeat;
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -47,6 +47,16 @@
             svg {
                 fill: $default_color !important;
             }
+        }
+    }
+}
+@media (max-width: 630px) {
+    .promo {
+        &__title {
+            font-size: 146px;
+        }
+        &__link {
+            width: 300px;
         }
     }
 }
