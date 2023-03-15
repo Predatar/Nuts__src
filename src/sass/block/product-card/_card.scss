@@ -1,0 +1,321 @@
+.card {
+    padding-top: 66px;
+    &__wrapper {
+        margin: 0 auto;
+        width: 1290px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slider {
+        width: 553px;
+        height: 571px;
+        border: 1.5px solid #93b474;
+        transition: all 0.2s;
+        &:hover {
+            border-color: $first_color;
+            .card__btn-prev,
+            .card__btn-next {
+                display: block;
+            }
+            .card__slider-img {
+                display: block;
+            }
+        }
+    }
+
+    &__slider-wrapper {
+        background-color: $third_bg_color;
+    }
+
+    &__slider-img {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        right: 16px;
+        top: 20px;
+    }
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        width: 153px;
+        height: 431px;
+    }
+
+    &__btn-prev {
+        display: none;
+    }
+
+    &__btn-next {
+        display: none;
+    }
+
+    &__info {
+        width: 660px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__subtitle {
+        margin-top: -4px;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: $first_color;
+    }
+
+    &__article {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $fourth_color;
+    }
+
+    &__title {
+        margin-top: 17px;
+        width: 500px;
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 32px;
+        color: $third_color;
+    }
+
+    &__composition,
+    &__weight,
+    &__energy,
+    &__life {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__composition-title,
+    &__weight-title,
+    &__energy-title,
+    &__life-title {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: $alternate_text_color;
+    }
+
+    &__composition-descr,
+    &__weight-descr,
+    &__energy-descr,
+    &__life-descr {
+        margin-right: 11px;
+        width: 377px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+        color: $fourth_color;
+    }
+
+    &__composition {
+        margin-top: 40px;
+    }
+    &__weight {
+        margin-top: 28px;
+    }
+    &__energy,
+    &__life {
+        margin-top: 39px;
+    }
+
+    &__alert {
+        margin-top: 38px;
+        height: 109px;
+        background-color: $third_bg_color;
+        border: 1px solid #e8e8e8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__alert-text {
+        width: 566px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 23px;
+        color: $third_color;
+    }
+
+    &__buy {
+        margin-top: 30px;
+        display: flex;
+        justify-content: end;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__price-text {
+        margin-right: 7px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__price-cost {
+        margin-right: 8px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.01em;
+        color: $first_color;
+        span {
+            margin-left: -2px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__price-last {
+        margin-top: 7px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: $fourth_color;
+        text-decoration: line-through;
+        span {
+            margin-left: -2px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &__btn {
+        margin-left: 34px;
+        width: 190px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $first_color;
+        border: 1px solid $first_color;
+        transition: all 0.2s;
+
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: $default_color;
+        cursor: pointer;
+        &:hover {
+            background-color: $default_color;
+            color: $first_color;
+        }
+    }
+}
+.swiper {
+    margin-left: 0;
+    margin-right: 0;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    &::after {
+        display: none;
+    }
+}
+
+@media (max-width: 1355px) {
+    .card {
+        &__wrapper {
+            margin: 0 25px;
+            width: auto;
+        }
+        &__info {
+            width: 612px;
+        }
+    }
+}
+@media (max-width: 1254px) {
+    .card {
+        &__slider {
+            width: 360px;
+        }
+    }
+}
+@media (max-width: 1125px) {
+    .card {
+        padding-bottom: 25px;
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        &__btn-prev {
+            display: block;
+        }
+        &__btn-next {
+            display: block;
+        }
+        &__slider-img {
+            display: block;
+        }
+    }
+}
+@media (max-width: 630px) {
+    .card {
+        &__title {
+            width: auto;
+        }
+        &__info {
+            width: 100%;
+        }
+        &__composition,
+        &__weight,
+        &__energy,
+        &__life {
+            flex-direction: column;
+        }
+        &__composition-descr,
+        &__weight-descr,
+        &__energy-descr,
+        &__life-descr {
+            margin-top: 10px;
+            width: auto;
+        }
+
+        &__alert {
+            height: 200px;
+            &-text {
+                width: 80%;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .card {
+        &__slider {
+            width: 100%;
+        }
+        &__wrapper {
+            margin: 0 10px;
+        }
+    }
+}

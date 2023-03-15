@@ -1,0 +1,208 @@
+.info {
+    padding: 89px 0;
+    &__group {
+        margin: 0 auto;
+        width: 724px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list-item {
+        padding-top: 5px;
+        padding-bottom: 18px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        color: $fourth_color;
+        cursor: pointer;
+        transition: all 0.3s;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: $first_color;
+            transition: transform 0.3s ease-out;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            z-index: 1;
+        }
+        &:hover {
+            color: $third_color;
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+        &_active {
+            color: $third_color;
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+
+    &__list-title {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__divider {
+        width: 100%;
+        height: 1px;
+        background-color: #ebebeb;
+    }
+
+    &__tabs {
+        margin: 0 auto;
+        margin-top: 53px;
+        width: 1290px;
+    }
+
+    &__tab {
+        width: 100%;
+        display: none;
+        justify-content: space-between;
+        &_active {
+            display: flex;
+        }
+    }
+
+    &__tab-img {
+        width: 409px;
+        height: 503px;
+    }
+
+    &__tab-wrapper {
+        width: 824px;
+    }
+
+    &__tab-descr {
+        margin-left: 3px;
+    }
+
+    &__tab-descr-first {
+        margin-top: 7px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: $third_color;
+        a {
+            font-weight: 600;
+            color: $first_color;
+        }
+    }
+
+    &__tab-descr-second {
+        margin-top: 37px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: $third_color;
+    }
+
+    &__tab-list-title {
+        margin-top: 18px;
+        margin-bottom: 17px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    &__tab-list {
+        list-style: disc;
+    }
+
+    &__tab-list-item {
+        margin-top: 15px;
+        margin-left: 20px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+        color: $third_color;
+        &::marker {
+            color: $first_color;
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+@media (max-width: 1355px) {
+    .info {
+        &__tabs {
+            margin-left: 25px;
+            margin-right: 25px;
+            width: auto;
+        }
+        &__tab-wrapper {
+            width: 630px;
+        }
+    }
+}
+@media (max-width: 1125px) {
+    .info {
+        &__tab {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .info {
+        &__group {
+            width: 500px;
+        }
+    }
+}
+@media (max-width: 630px) {
+    .info {
+        &__tab-wrapper {
+            width: 100%;
+        }
+    }
+}
+@media(max-width: 535px) {
+    .info {
+        &__group {
+            margin: 0 10px;
+            width: auto;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &__list {
+            width: 500px;
+        }
+        &__tabs {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        &__tab-img {
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .info {
+        &__tab-img {
+            width: auto;
+        }
+    }
+}
