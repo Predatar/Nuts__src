@@ -1,0 +1,299 @@
+.registration {
+    margin: 0 auto;
+    width: 1290px;
+    &__title {
+        margin-bottom: 24px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__container {
+        width: 474px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title-data,
+    &__title-addres,
+    &__title-password,
+    &__title-fop,
+    &__fop-address-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+    &__title-addres,
+    &__title-password {
+        margin-top: 47px;
+        margin-bottom: 30px;
+    }
+
+    &__title-fop {
+        margin-top: 56px;
+    }
+    &__fop-address-title {
+        margin-top: 47px;
+        margin-bottom: 30px;
+    }
+
+    &__nav {
+        margin-top: 44px;
+        display: flex;
+        justify-content: space-around;
+        &-item {
+            padding-bottom: 15px;
+            position: relative;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 17px;
+            color: $alternate_text_color;
+            transition: all 0.2s;
+            cursor: pointer;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: $first_color;
+                transition: transform 0.3s ease-out;
+                transform: scaleX(0);
+                z-index: 1;
+            }
+            &:hover {
+                color: $first_color;
+                &::after {
+                    transform: scaleX(1.3);
+                }
+            }
+            &_active {
+                font-weight: 700;
+                color: $third_color;
+                &::after {
+                    transform: scaleX(1.3);
+                }
+            }
+        }
+    }
+
+    &__name,
+    &__email,
+    &__tel {
+        padding-left: 15px;
+        height: 47px;
+        border: 0.5px solid rgba(0, 0, 0, 0.15);
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $third_color;
+        &:focus {
+            outline-color: $first_color;
+        }
+        &:hover {
+            background-color: rgba(51, 125, 90, 0.1);
+        }
+    }
+    &__name {
+        margin-top: 42px;
+    }
+    &__email,
+    &__tel {
+        margin-top: 15px;
+    }
+
+    &__address,
+    &__address-text {
+        height: 47px;
+        width: 100%;
+    }
+
+    &__address {
+        margin-top: 15px;
+        position: relative;
+    }
+
+    &__address-text {
+        margin-top: 15px;
+        padding-left: 15px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $third_color;
+        border: 0.5px solid rgba(0, 0, 0, 0.15);
+        &:hover {
+            background-color: rgba(51, 125, 90, 0.1);
+        }
+        &:focus {
+            outline-color: $first_color;
+        }
+    }
+
+    &__password {
+        padding-left: 15px;
+        height: 47px;
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $third_color;
+        border: 0.5px solid rgba(0, 0, 0, 0.15);
+        &:focus {
+            outline-color: $first_color;
+        }
+        &:hover {
+            background-color: rgba(51, 125, 90, 0.1);
+        }
+        &:last-of-type {
+            margin-top: 15px;
+        }
+    }
+
+    &__terms-container {
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__terms {
+        width: 14px;
+        height: 14px;
+        outline: 1.5px solid $first_color;
+        cursor: pointer;
+    }
+
+    &__terms-descr {
+        margin-left: 10px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 0.01em;
+        color: $fourth_color;
+    }
+
+    &__terms-link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        color: $first_color;
+    }
+
+    &__submit {
+        width: 474px;
+        height: 50px;
+        background-color: $first_color;
+        border: 1px solid $first_color;
+        color: $default_color;
+        transition: all 0.2s;
+        cursor: pointer;
+        &:hover {
+            background-color: $default_color;
+            color: $first_color;
+        }
+    }
+
+    &__photo {
+        position: relative;
+        align-items: center;
+        display: flex;
+        #photo {
+            opacity: 0;
+            position: absolute;
+            z-index: -10;
+        }
+        label {
+            cursor: pointer;
+            padding-bottom: 7px;
+            width: 131px;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('@img/profile-plug.png');
+        }
+    }
+    &__label-text {
+        padding-bottom: 3px;
+        border-bottom: 1.5px dashed #ffffff;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 17px;
+        color: $default_color;
+    }
+
+    &__fop {
+        position: relative;
+        opacity: 0;
+        z-index: -10;
+        transition: all 0.2s ease-in;
+        &-address {
+            position: relative;
+            opacity: 0;
+            z-index: -10;
+            transition: all 0.2s ease-in;
+            &_show {
+                opacity: 1 !important;
+                z-index: 1;
+            }
+        }
+        &_show {
+            opacity: 1 !important;
+            z-index: 1;
+        }
+    }
+
+    &__check-fop {
+        #fop {
+            margin-top: 27px;
+            width: 14px;
+            height: 14px;
+            outline: 1.5px solid $first_color;
+            cursor: pointer;
+        }
+        label {
+            margin-left: 10px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 0.01em;
+            color: $fourth_color;
+        }
+    }
+
+    &__props {
+        margin-top: 30px;
+        padding-left: 15px;
+        width: 100%;
+        height: 47px;
+        border: 0.5px solid rgba(0, 0, 0, 0.15);
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $third_color;
+    }
+}

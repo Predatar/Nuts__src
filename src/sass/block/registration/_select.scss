@@ -1,0 +1,215 @@
+.select__head {
+    position: relative;
+    padding-left: 15px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $third_color;
+    transition: all 0.2s;
+    &:hover {
+        background-color: rgba(51, 125, 90, 0.1);
+    }
+}
+
+.select__head::after {
+    width: 11px;
+    height: 7px;
+    background: #fff url('../icons/arrow-down_green.svg') no-repeat center / cover;
+    position: absolute;
+    right: 17px;
+    bottom: 50%;
+    transform: translateY(50%);
+    content: '';
+    display: block;
+    transition: 0.2s ease-in;
+}
+
+.select__head.open::after {
+    transform: translateY(50%) rotate(180deg);
+}
+
+.select__list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 100;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    &_show {
+        display: flex !important;
+    }
+    &_rus {
+        display: none;
+    }
+    &_ukr {
+        display: none;
+    }
+    &_blr {
+        display: none;
+    }
+    &_msk {
+        display: none;
+    }
+    &_nn {
+        display: none;
+    }
+    &_spb {
+        display: none;
+    }
+    &_khr {
+        display: none;
+    }
+    &_kv {
+        display: none;
+    }
+    &_lv {
+        display: none;
+    }
+    &_ods {
+        display: none;
+    }
+    &_mnk {
+        display: none;
+    }
+}
+
+.select__item {
+    padding-left: 15px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid rgba(224, 229, 231, 0.5);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $third_color;
+    cursor: pointer;
+    &_active {
+        color: $default_color;
+        background-color: $first_color;
+        &:hover {
+            background: $first_color !important;
+        }
+    }
+}
+
+.select__item:hover {
+    background-color: rgba(51, 125, 90, 0.1);
+}
+
+.select__fop-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 100;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    &_show {
+        display: flex !important;
+    }
+    &_rus {
+        display: none;
+    }
+    &_ukr {
+        display: none;
+    }
+    &_blr {
+        display: none;
+    }
+    &_msk {
+        display: none;
+    }
+    &_nn {
+        display: none;
+    }
+    &_spb {
+        display: none;
+    }
+    &_khr {
+        display: none;
+    }
+    &_kv {
+        display: none;
+    }
+    &_lv {
+        display: none;
+    }
+    &_ods {
+        display: none;
+    }
+    &_mnk {
+        display: none;
+    }
+}
+.select__fop-item {
+    padding-left: 15px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid rgba(224, 229, 231, 0.5);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $third_color;
+    cursor: pointer;
+    &_active {
+        color: $default_color;
+        background-color: $first_color;
+        &:hover {
+            background: $first_color !important;
+        }
+    }
+    &:hover {
+        background-color: rgba(51, 125, 90, 0.1);
+    }
+}
+.select__fop-head {
+    position: relative;
+    padding-left: 15px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $third_color;
+    transition: all 0.2s;
+    &:hover {
+        background-color: rgba(51, 125, 90, 0.1);
+    }
+    &::after {
+        width: 11px;
+        height: 7px;
+        background: #fff url('../icons/arrow-down_green.svg') no-repeat center / cover;
+        position: absolute;
+        right: 17px;
+        bottom: 50%;
+        transform: translateY(50%);
+        content: '';
+        display: block;
+        transition: 0.2s ease-in;
+    }
+}
+.select__fop-input {
+}
