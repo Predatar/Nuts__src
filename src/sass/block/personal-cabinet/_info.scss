@@ -1,0 +1,55 @@
+.info {
+    margin: 0 auto;
+    width: 1290px;
+    display: flex;
+
+    &__title {
+        margin-right: 80px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__wrapper {
+        width: 74%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__manager {
+    }
+
+    &__manager-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        color: $third_color;
+    }
+
+    &__manager-link {
+        margin-left: 8px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        color: $first_color;
+    }
+
+    &__discount {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        color: $first_color;
+    }
+}
