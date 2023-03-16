@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const fopCheck = document.querySelector('#fop');
     const fopInputs = [
         document.querySelector('.registration__props'),
-        ...document.querySelectorAll('.select__fop-input')
+        ...document.querySelectorAll('.select__fop-input'),
+        document.querySelector('#addressFop')
     ];
 
     let selectListMas = document.querySelectorAll(
@@ -116,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             );
 
             selectCity.addEventListener('click', ({ target }) => {
-                address.city = selectCity.getAttribute('data-value');
+                address.city = target.getAttribute('data-value');
                 inputSelectCity.value = address.city;
                 selectHead[2].innerHTML = target.innerHTML;
                 selectCityMas[0].classList.toggle('select__item_active');
@@ -186,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             );
 
             selectCityFop.addEventListener('click', ({ target }) => {
-                addressFop.city = selectCityFop.getAttribute('data-value');
+                addressFop.city = target.getAttribute('data-value');
                 inputSelectCityFop.value = addressFop.city;
                 selectHeadFop[2].innerHTML = target.innerHTML;
                 selectCityMasFop[0].classList.toggle('select__fop-item_active');
@@ -241,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
             );
 
             selectCityCorp.addEventListener('click', ({ target }) => {
-                addressCorp.city = selectCityCorp.getAttribute('data-value');
+                addressCorp.city = target.getAttribute('data-value');
                 inputSelectCityCorp.value = addressCorp.city;
                 selectHeadCorp[2].innerHTML = target.innerHTML;
                 selectCityMasCorp[0].classList.toggle('select__corporate-item_active');

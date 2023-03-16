@@ -38,14 +38,14 @@
                         Юридическое лицо
                     </div>
                 </div>
-                <input type="text" name="fullname" id="fullname" class="registration__name" placeholder="ФИО*" required>
+                <input type="text" required name="fullname" id="fullname" class="registration__name" placeholder="ФИО*">
                 <input type="email" name="email" id="email" class="registration__email" placeholder="Email*" required>
                 <input type="tel" name="tel" id="tel" class="registration__tel" placeholder="Телефон*" required>
                 <div class="registration__title-addres">
                     2. Адрес
                 </div>
                 <div class="registration__address">
-                    <input class="select__input" type="hidden" name="country" id="country" required>
+                    <input class="select__input" type="text" required name="country" id="country">
                     <div class="select__head">Страна</div>
                     <ul class="select__list">
                         <li class="select__item" data-value="rus">Россия</li>
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="registration__address">
-                    <input class="select__input" type="hidden" name="region" id="region">
+                    <input class="select__input" type="text" required name="region" id="region">
                     <div class="select__head">Область</div>
                     <ul class="select__list select__list_rus">
                         <li class="select__item" data-value="Moscow region">Московская обл.</li>
@@ -73,7 +73,7 @@
                     </ul>
                 </div>
                 <div class="registration__address">
-                    <input class="select__input" type="hidden" name="city" id="city">
+                    <input class="select__input" type="text" required name="city" id="city">
                     <div class="select__head">Город</div>
                     <ul class="select__list select__list_msk">
                         <li class="select__item" data-value="Moscow">Москва</li>
@@ -88,7 +88,7 @@
                         <li class="select__item" data-value="Kharkiv">Харьков</li>
                     </ul>
                     <ul class="select__list select__list_kv">
-                        <li class="select__item" data-value="Kyiv">Киевская обл.</li>
+                        <li class="select__item" data-value="Kyiv">Киев</li>
                     </ul>
                     <ul class="select__list select__list_lv">
                         <li class="select__item" data-value="Lviv">Львов</li>
@@ -100,7 +100,8 @@
                         <li class="select__item" data-value="Minsk">Минск</li>
                     </ul>
                 </div>
-                <input type="text" name="address" class="registration__address-text" placeholder="Адрес">
+                <input type="text" required id="address" name="address" class="registration__address-text"
+                    placeholder="Адрес">
                 <div class="registration__title-password">
                     3. Пароль
                 </div>
@@ -109,7 +110,7 @@
                 <input type="password" name="password" id="confirmPassword" required placeholder="Подтвердите пароль*"
                     class="registration__password">
                 <div class="registration__terms-container">
-                    <input type="checkbox" name="terms" id="terms" class="registration__terms">
+                    <input type="checkbox" name="terms" id="terms" class="registration__terms" required>
                     <div class="registration__terms-descr">
                         Я согласен с
                         <a href="#" class="registration__terms-link">Условиями регистрации</a>
@@ -120,7 +121,9 @@
             <div class="registration__container">
                 <div class="registration__photo">
                     <input type="file" name="photo" id="photo" accept="image/*">
-                    <label for="photo"><div class="registration__label-text">Загрузить фото</div></label>
+                    <label for="photo">
+                        <div class="registration__label-text">Загрузить фото</div>
+                    </label>
                 </div>
                 <div class="registration__fop-container">
                     <div class="registration__check-fop">
@@ -131,14 +134,15 @@
                         <div class="registration__title-fop">
                             1. Реквизиты
                         </div>
-                        <input type="text" placeholder="ЕДРПО" name="EDRPO" id="EDRPO" required class="registration__props">
+                        <input type="text" required placeholder="ЕДРПО" name="EDRPO" id="EDRPO" required
+                            class="registration__props">
                     </div>
                     <div class="registration__fop-address">
                         <div class="registration__fop-address-title">
                             2. Адрес ФОП
                         </div>
                         <div class="registration__address">
-                            <input class="select__fop-input" type="hidden" name="fopCountry" id="fopCountry">
+                            <input class="select__fop-input" type="text" required name="fopCountry" id="fopCountry">
                             <div class="select__fop-head">Страна</div>
                             <ul class="select__fop-list">
                                 <li class="select__fop-item" data-value="rus">Россия</li>
@@ -146,9 +150,9 @@
                                 <li class="select__fop-item" data-value="blr">Беларусь</li>
                             </ul>
                         </div>
-        
+
                         <div class="registration__address">
-                            <input class="select__fop-input" type="hidden" name="fopRegion" id="fopRegion">
+                            <input class="select__fop-input" type="text" required name="fopRegion" id="fopRegion">
                             <div class="select__fop-head">Область</div>
                             <ul class="select__fop-list select__fop-list_rus">
                                 <li class="select__fop-item" data-value="Moscow region">Московская обл.</li>
@@ -166,7 +170,7 @@
                             </ul>
                         </div>
                         <div class="registration__address">
-                            <input class="select__fop-input" type="hidden" name="fopCity" id="fopCity">
+                            <input class="select__fop-input" type="text" required name="fopCity" id="fopCity">
                             <div class="select__fop-head">Город</div>
                             <ul class="select__fop-list select__fop-list_msk">
                                 <li class="select__fop-item" data-value="Moscow">Москва</li>
@@ -193,7 +197,8 @@
                                 <li class="select__fop-item" data-value="Minsk">Минск</li>
                             </ul>
                         </div>
-                        <input type="text" name="address" class="registration__address-text" placeholder="Адрес">
+                        <input type="text" required id="addressFop" name="address" class="registration__address-text"
+                            placeholder="Адрес">
                     </div>
                 </div>
                 <div class="registration__corporate-container">
@@ -201,14 +206,16 @@
                         <div class="registration__title-corporate">
                             1. Реквизиты
                         </div>
-                        <input type="text" placeholder="ОКПО" name="OKPO" id="OKPO" required class="registration__props-corporate">
+                        <input type="text" required placeholder="ОКПО" name="OKPO" id="OKPO" required
+                            class="registration__props-corporate">
                     </div>
                     <div class="registration__corporate-address">
                         <div class="registration__corporate-address-title">
                             2. Юридический адрес
                         </div>
                         <div class="registration__address">
-                            <input class="select__corporate-input" type="hidden" name="corpCountry" id="corpCountry">
+                            <input class="select__corporate-input" type="text" required name="corpCountry"
+                                id="corpCountry">
                             <div class="select__corporate-head">Страна</div>
                             <ul class="select__corporate-list">
                                 <li class="select__corporate-item" data-value="rus">Россия</li>
@@ -216,13 +223,15 @@
                                 <li class="select__corporate-item" data-value="blr">Беларусь</li>
                             </ul>
                         </div>
-        
+
                         <div class="registration__address">
-                            <input class="select__corporate-input" type="hidden" name="corpRegion" id="corpRegion">
+                            <input class="select__corporate-input" type="text" required name="corpRegion"
+                                id="corpRegion">
                             <div class="select__corporate-head">Область</div>
                             <ul class="select__corporate-list select__corporate-list_rus">
                                 <li class="select__corporate-item" data-value="Moscow region">Московская обл.</li>
-                                <li class="select__corporate-item" data-value="Nizhny Novgorod region">Нижегородская обл.</li>
+                                <li class="select__corporate-item" data-value="Nizhny Novgorod region">Нижегородская
+                                    обл.</li>
                                 <li class="select__corporate-item" data-value="Leningrad region">Ленинградская обл.</li>
                             </ul>
                             <ul class="select__corporate-list select__corporate-list_ukr">
@@ -236,7 +245,7 @@
                             </ul>
                         </div>
                         <div class="registration__address">
-                            <input class="select__corporate-input" type="hidden" name="corpCity" id="corpCity">
+                            <input class="select__corporate-input" type="text" required name="corpCity" id="corpCity">
                             <div class="select__corporate-head">Город</div>
                             <ul class="select__corporate-list select__corporate-list_msk">
                                 <li class="select__corporate-item" data-value="Moscow">Москва</li>
@@ -263,8 +272,10 @@
                                 <li class="select__corporate-item" data-value="Minsk">Минск</li>
                             </ul>
                         </div>
-                        <input type="text" name="address" class="registration__address-text" placeholder="Адрес">
-                        <input type="text" name="index" class="registration__address-index" placeholder="Индекс">
+                        <input type="text" required id="addressCorp" name="address" class="registration__address-text"
+                            placeholder="Адрес">
+                        <input type="text" required id="index" name="index" class="registration__address-index"
+                            placeholder="Индекс">
                     </div>
                 </div>
             </div>

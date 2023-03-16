@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const tel = document.querySelector('#tel');
     const country = document.querySelector('#country');
 
-
     registerFrom.addEventListener('submit', e => {
         e.preventDefault();
+        console.log('form');
     });
 });

@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const fopContainer = document.querySelector('.registration__fop-container');
     const corporateContainer = document.querySelector('.registration__corporate-container');
 
+    const fopInputs = [
+        document.querySelector('.registration__props'),
+        ...document.querySelectorAll('.select__fop-input'),
+        document.querySelector('#addressFop')
+    ];
     const corpInputs = document.querySelectorAll('.registration__corporate-container input');
     corpInputs.forEach(elem => {
         elem.setAttribute('disabled', 'disabled');
@@ -21,6 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
         target.classList.add('registration__nav-item_active');
         switch (target.getAttribute('data-person')) {
             case 'fop':
+                if (fopCheck.checked) {
+                    fopInputs.forEach(elem => {
+                        elem.removeAttribute('disabled');
+                    });
+                }
                 corpInputs.forEach(elem => {
                     elem.setAttribute('disabled', 'disabled');
                 });
@@ -28,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 corporateContainer.classList.remove('registration__corporate-container_show');
                 break;
             case 'corp':
+                fopInputs.forEach(elem => {
+                    elem.setAttribute('disabled', 'disabled');
+                });
                 corpInputs.forEach(elem => {
                     elem.removeAttribute('disabled');
                 });
