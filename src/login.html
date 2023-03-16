@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     @@include('html/head.html', {})
     <link rel="stylesheet" href="css/style.login.min.css">
 </head>
+
 <body>
     @@include('html/header.html', {})
     <section class="promo">
@@ -23,20 +25,22 @@
         <div class="login__title">
             Войти в личный кабинет
         </div>
-        <form action="GET" class="login__form">
+        <form class="login__form">
             <input type="email" name="email" id="email" class="login__input" placeholder="Email" required>
             <input type="password" name="password" id="password" class="login__input" placeholder="Пароль" required>
-            <a href="#" class="login__forgot">
+            <a href="@html/recover-password.html" class="login__forgot">
                 Забыли пароль?
             </a>
             <button type="submit" class="login__btn">
                 Войти
             </button>
-            <a href="#" class="login__registration">
+            <a href="@html/registration.html" class="login__registration">
                 Регистрация
             </a>
         </form>
     </section>
     @@include('html/footer.html', {theme: 'footer_dark'})
+    <script src="js/script.login.js"></script>
 </body>
+
 </html>
