@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     corpInputs.forEach(elem => {
         elem.setAttribute('disabled', 'disabled');
     });
+    localStorage.setItem('corp', false);
 
     regNav.addEventListener('click', ({ target }) => {
         regNavItem.forEach(elem => {
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         target.classList.add('registration__nav-item_active');
         switch (target.getAttribute('data-person')) {
             case 'fop':
+                localStorage.setItem('corp', false);
                 if (fopCheck.checked) {
                     fopInputs.forEach(elem => {
                         elem.removeAttribute('disabled');
@@ -38,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 corporateContainer.classList.remove('registration__corporate-container_show');
                 break;
             case 'corp':
+                localStorage.setItem('corp', true);
+                fopCheck.checked = false;
+                fopProps.classList.remove('registration__fop_show');
+                fopAddress.classList.remove('registration__fop-address_show');
                 fopInputs.forEach(elem => {
                     elem.setAttribute('disabled', 'disabled');
                 });
