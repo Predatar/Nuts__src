@@ -25,7 +25,7 @@
         <div class="login__title">
             Войти в личный кабинет
         </div>
-        <form method="get" class="login__form">
+        <form class="login__form">
             <input type="email" name="email" id="email" class="login__input" placeholder="Email" required>
             <input type="password" name="password" id="password" class="login__input" placeholder="Пароль" required>
             <a href="#" class="login__forgot">
@@ -40,6 +40,7 @@
         </form>
     </section>
     @@include('html/footer.html', {theme: 'footer_dark'})
+    <script src="js/script.login.js"></script>
 </body>
 
 </html>
