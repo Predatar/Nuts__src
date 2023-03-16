@@ -1,14 +1,14 @@
 .registration {
+    padding: 30px 0 90px;
     margin: 0 auto;
     width: 1290px;
     &__title {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 800;
         font-size: 32px;
         line-height: 32px;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 
@@ -21,13 +21,19 @@
         width: 474px;
         display: flex;
         flex-direction: column;
+        &:last-of-type {
+            margin-top: 66px;
+            margin-right: 76px;
+        }
     }
 
     &__title-data,
     &__title-addres,
     &__title-password,
     &__title-fop,
-    &__fop-address-title {
+    &__fop-address-title,
+    &__title-corporate,
+    &__corporate-address-title {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -38,22 +44,31 @@
     }
     &__title-addres,
     &__title-password {
-        margin-top: 47px;
-        margin-bottom: 30px;
+        margin-top: 45px;
+        margin-bottom: 7px;
+    }
+
+    &__title-password {
+        margin-bottom: 20px;
     }
 
     &__title-fop {
-        margin-top: 56px;
+        margin-top: 73px;
     }
     &__fop-address-title {
         margin-top: 47px;
-        margin-bottom: 30px;
+        margin-bottom: 22px;
+    }
+
+    &__title-corporate {
+        margin-top: 119px;
     }
 
     &__nav {
-        margin-top: 44px;
+        margin-top: 32px;
         display: flex;
         justify-content: space-around;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
         &-item {
             padding-bottom: 15px;
             position: relative;
@@ -111,7 +126,7 @@
         }
     }
     &__name {
-        margin-top: 42px;
+        margin-top: 41px;
     }
     &__email,
     &__tel {
@@ -119,17 +134,19 @@
     }
 
     &__address,
-    &__address-text {
+    &__address-text,
+    &__address-index {
         height: 47px;
         width: 100%;
     }
 
     &__address {
-        margin-top: 15px;
+        margin-top: 16px;
         position: relative;
     }
 
-    &__address-text {
+    &__address-text,
+    &__address-index {
         margin-top: 15px;
         padding-left: 15px;
         font-family: 'Montserrat';
@@ -169,7 +186,7 @@
     }
 
     &__terms-container {
-        margin: 30px 0;
+        margin: 18px 0;
         display: flex;
         align-items: center;
     }
@@ -201,10 +218,16 @@
     }
 
     &__submit {
+        margin-top: 4px;
         width: 474px;
         height: 50px;
         background-color: $first_color;
         border: 1px solid $first_color;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
         color: $default_color;
         transition: all 0.2s;
         cursor: pointer;
@@ -263,18 +286,24 @@
             opacity: 1 !important;
             z-index: 1;
         }
+        &-container {
+            display: block;
+            &_hide {
+                display: none !important;
+            }
+        }
     }
 
     &__check-fop {
+        margin-top: 26px;
         #fop {
-            margin-top: 27px;
             width: 14px;
             height: 14px;
             outline: 1.5px solid $first_color;
             cursor: pointer;
         }
         label {
-            margin-left: 10px;
+            margin-left: 6px;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
@@ -284,8 +313,9 @@
         }
     }
 
-    &__props {
-        margin-top: 30px;
+    &__props,
+    &__props-corporate {
+        margin-top: 22px;
         padding-left: 15px;
         width: 100%;
         height: 47px;
@@ -295,5 +325,20 @@
         font-size: 14px;
         line-height: 17px;
         color: $third_color;
+    }
+
+    &__corporate {
+        &-container {
+            display: none;
+            &_show {
+                display: block !important;
+            }
+        }
+        &-address {
+            margin-top: 47px;
+            &-title {
+                margin-bottom: 21px;
+            }
+        }
     }
 }

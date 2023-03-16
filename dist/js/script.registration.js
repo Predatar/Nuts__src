@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const fopCheck = document.querySelector('#fop');
     const fopProps = document.querySelector('.registration__fop');
     const fopAddress = document.querySelector('.registration__fop-address');
+    const fopContainer = document.querySelector('.registration__fop-container');
+    const corporateContainer = document.querySelector('.registration__corporate-container');
+
+    const corpInputs = document.querySelectorAll('.registration__corporate-container input');
+    corpInputs.forEach(elem => {
+        elem.setAttribute('disabled', 'disabled');
+    });
 
     regNav.addEventListener('click', ({ target }) => {
         regNavItem.forEach(elem => {
@@ -12,15 +19,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 : null;
         });
         target.classList.add('registration__nav-item_active');
+        switch (target.getAttribute('data-person')) {
+            case 'fop':
+                corpInputs.forEach(elem => {
+                    elem.setAttribute('disabled', 'disabled');
+                });
+                fopContainer.classList.remove('registration__fop-container_hide');
+                corporateContainer.classList.remove('registration__corporate-container_show');
+                break;
+            case 'corp':
+                corpInputs.forEach(elem => {
+                    elem.removeAttribute('disabled');
+                });
+                fopContainer.classList.add('registration__fop-container_hide');
+                corporateContainer.classList.add('registration__corporate-container_show');
+                break;
+            default:
+                break;
+        }
     });
 
     fopCheck.addEventListener('change', () => {
         if (fopCheck.checked) {
             fopProps.classList.add('registration__fop_show');
-            fopAddress.classList.add('registration__fop-address_show')
+            fopAddress.classList.add('registration__fop-address_show');
         } else {
             fopProps.classList.remove('registration__fop_show');
-            fopAddress.classList.remove('registration__fop-address_show')
+            fopAddress.classList.remove('registration__fop-address_show');
         }
     });
 });

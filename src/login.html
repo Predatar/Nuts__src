@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     @@include('html/head.html', {})
     <link rel="stylesheet" href="css/style.login.min.css">
 </head>
+
 <body>
     @@include('html/header.html', {})
     <section class="promo">
@@ -32,11 +34,12 @@
             <button type="submit" class="login__btn">
                 Войти
             </button>
-            <a href="#" class="login__registration">
+            <a href="@html/registration.html" class="login__registration">
                 Регистрация
             </a>
         </form>
     </section>
     @@include('html/footer.html', {theme: 'footer_dark'})
 </body>
+
 </html>
