@@ -62,9 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (fopCheck.checked) {
             fopProps.classList.add('registration__fop_show');
             fopAddress.classList.add('registration__fop-address_show');
+            fopContainer.classList.add('registration__fop-container_height');
         } else {
             fopProps.classList.remove('registration__fop_show');
             fopAddress.classList.remove('registration__fop-address_show');
+            fopContainer.classList.remove('registration__fop-container_height');
         }
     });
 });

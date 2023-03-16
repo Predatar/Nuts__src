@@ -25,7 +25,7 @@
         <div class="registration__title">
             Регистрация
         </div>
-        <form class="registration__form">
+        <form class="registration__form" id="form">
             <div class="registration__container">
                 <div class="registration__title-data">
                     1. Контактные данные
@@ -116,7 +116,7 @@
                         <a href="#" class="registration__terms-link">Условиями регистрации</a>
                     </div>
                 </div>
-                <button type="submit" class="registration__submit">Продолжить</button>
+
             </div>
             <div class="registration__container">
                 <div class="registration__photo">
@@ -280,6 +280,7 @@
                 </div>
             </div>
         </form>
+        <button type="submit" class="registration__submit" form="form">Продолжить</button>
     </section>
     @@include('html/footer.html', {theme: 'footer_dark'})
     <script src="js/script.registration.js"></script>
