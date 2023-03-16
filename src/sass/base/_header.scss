@@ -497,6 +497,9 @@
                 transform-origin: bottom left;
             }
         }
+        &_hide {
+            display: none !important;
+        }
     }
 
     &__account-link {
@@ -530,6 +533,43 @@
                 transform: scaleX(1);
                 transform-origin: bottom left;
             }
+        }
+        &_hide {
+            display: none !important;
+        }
+    }
+
+    &__cabinet {
+        display: none;
+        &-link {
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 0.02em;
+            color: $first_text_color;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $second_color;
+            transition: transform 0.3s ease-out;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            z-index: 1;
+        }
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+        &_show {
+            display: block !important;
         }
     }
 
@@ -686,6 +726,9 @@
         }
         &__registration {
             display: none;
+        }
+        &__account {
+            display: none !important;
         }
         &__language {
             margin-left: 25px;
