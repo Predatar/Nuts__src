@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (isFop.checked) {
             console.log(`isFop ${true}`);
+            person.isFop = true;
             person.EDRPO = EDRPO.value;
             person.countryFop = countryFop.value;
             person.regionFop = regionFop.value;
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (isCorp == 'true') {
             console.log(`isCorp ${true}`);
+            person.isCorp = true;
             person.OKPO = OKPO.value;
             person.countryCorp = countryCorp.value;
             person.regionCorp = regionCorp.value;

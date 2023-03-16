@@ -280,12 +280,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &__account {
+        display: none;
+        &-link {
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 0.02em;
+            line-height: 15px;
+            color: $first_text_color;
+        }
+        &_show {
+            display: block !important;
+        }
+    }
     &__login {
         width: 48px;
         &-link {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             position: relative;
             &::after {
                 content: '';
@@ -316,6 +331,9 @@
             letter-spacing: 0.02em;
             line-height: 15px;
             color: $first_text_color;
+        }
+        &_hide {
+            display: none !important;
         }
     }
 
@@ -349,13 +367,16 @@
                 }
             }
         }
+        &_hide {
+            display: none !important;
+        }
     }
 
     &__language {
         width: 30px;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         &-select {
             font-family: 'Raleway';
             font-weight: 500;
