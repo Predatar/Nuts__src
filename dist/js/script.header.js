@@ -35,4 +35,33 @@ document.addEventListener('DOMContentLoaded', () => {
         sideMenuLogin.classList.remove('sidemenu__login_hide');
         sideMenuRegistration.classList.remove('sidemenu__registration_hide');
     }
+
+    const page = document.querySelector('.promo').getAttribute('data-page');
+    const headerNavigation = document.querySelectorAll('.header__list-link');
+    const sidemenuNavigation = document.querySelectorAll('.sidemenu__list-item');
+
+    const addActiveClassToNavigation = i => {
+        headerNavigation[i].classList.add('header__list-link_active');
+        sidemenuNavigation[i].classList.add('sidemenu__list-item_active');
+    };
+
+    switch (page) {
+        case 'product-catalog':
+            addActiveClassToNavigation(0);
+            break;
+        case 'about-company':
+            addActiveClassToNavigation(1);
+            break;
+        case 'payment':
+            addActiveClassToNavigation(2);
+            break;
+        case 'for-clients':
+            addActiveClassToNavigation(3);
+            break;
+        case 'news':
+            addActiveClassToNavigation(4);
+            break;
+        default:
+            break;
+    }
 });

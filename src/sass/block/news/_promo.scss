@@ -24,10 +24,9 @@
             letter-spacing: 0.02em;
             color: $fourth_color;
         }
-        img {
+        svg {
             margin: 0 8px;
-            width: 12px;
-            height: 10px;
+            
         }
     }
 
@@ -117,7 +116,7 @@
 }
 @media (max-width: 630px) {
     .promo {
-        padding-bottom: 125px;
+        padding-bottom: 55px;
 
         &__wrapper {
             margin: 0 10px;

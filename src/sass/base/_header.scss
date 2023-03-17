@@ -245,6 +245,13 @@
                     transform-origin: bottom left;
                 }
             }
+            &_active {
+                color: $first_color;
+                &::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
         }
     }
 }
@@ -607,6 +614,12 @@
             &:hover {
                 background-color: $first_color;
             }
+            &_active {
+                background-color: $first_color;
+                .sidemenu__list-link {
+                    color: $default_color;
+                }
+            }
         }
         &-link {
             padding: 16px 11px;
@@ -620,9 +633,6 @@
             color: $third_color;
             &:hover {
                 color: $default_color;
-                .sidemenu__list-item {
-                    background-color: $first_color;
-                }
             }
         }
     }
