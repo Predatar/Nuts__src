@@ -1,10 +1,9 @@
 .main {
-    padding-top: 30px;
+    padding-top: 42px;
     margin: 0 auto;
     width: 410px;
     &__title {
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 800;
         font-size: 32px;
         line-height: 32px;
@@ -13,9 +12,8 @@
         color: $third_color;
     }
     &__subtitle {
-        margin-top: 26px;
+        margin-top: 22px;
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 600;
         font-size: 18px;
         line-height: 32px;
@@ -25,14 +23,12 @@
     }
 
     &__descr {
-        margin-top: 16px;
+        margin-top: 5px;
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 500;
         font-size: 15px;
         line-height: 20px;
         text-align: center;
-        letter-spacing: 0.01em;
         color: $fourth_color;
     }
 
@@ -40,11 +36,10 @@
         display: flex;
         flex-direction: column;
         input {
-            margin-top: 20px;
-            padding-left: 15px;
+            margin-top: 17px;
+            padding-left: 12px;
             height: 47px;
             font-family: 'Montserrat';
-            font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 17px;
@@ -88,7 +83,6 @@
     &__title {
         margin-top: 45px;
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 600;
         font-size: 18px;
         line-height: 32px;
@@ -98,14 +92,11 @@
     }
 
     &__subtitle {
-        margin-top: 16px;
+        margin-top: 5px;
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 500;
         font-size: 15px;
         line-height: 20px;
-        text-align: center;
-        letter-spacing: 0.01em;
         color: $fourth_color;
         span {
             color: $third_color;
@@ -116,11 +107,10 @@
         display: flex;
         flex-direction: column;
         input {
-            margin-top: 20px;
-            padding-left: 15px;
+            margin-top: 16px;
+            padding-left: 12px;
             height: 47px;
             font-family: 'Montserrat';
-            font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 17px;
@@ -167,5 +157,8 @@
         margin-left: 10px;
         margin-right: 10px;
         width: auto;
+        &__subtitle {
+            text-align: center;
+        }
     }
 }
