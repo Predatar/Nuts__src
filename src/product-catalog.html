@@ -13,7 +13,7 @@
 
 <body>
     @@include('html/header.html', {})
-    <section class="promo">
+    <section class="promo" data-page="product-catalog">
         <div class="promo__bg-img">
             <img src="@img/catalog-promo-bg.png" alt="nuts">
         </div>
@@ -132,10 +132,10 @@
             <div class="swiper about-nuts__slider">
                 <div class="swiper-wrapper about-nuts__slider-wrapper">
                     <div class="swiper-slide about-nuts__slide">
-                        <img src="@img/nuts.png" alt="nuts">
+                        <img src="@img/nuts.png" alt="nuts" loading="lazy">
                     </div>
                     <div class="swiper-slide about-nuts__slide">
-                        <img src="@img/nuts.png" alt="nuts">
+                        <img src="@img/nuts.png" alt="nuts" loading="lazy">
                     </div>
                 </div>
                 <div class="swiper-button-prev about-nuts__btn-prev">

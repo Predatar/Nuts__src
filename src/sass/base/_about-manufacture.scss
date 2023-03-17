@@ -183,7 +183,7 @@
         padding-right: 25px;
         &__wrapper {
             margin: 0 25px;
-            width: auto;
+            width: auto !important;
         }
         &__title {
             font-size: 28px;
@@ -207,7 +207,6 @@
         padding-right: 10px;
         &__wrapper {
             margin: 0 10px;
-            width: auto;
         }
         &__title {
             font-size: 28px;

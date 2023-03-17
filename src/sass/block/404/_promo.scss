@@ -1,5 +1,5 @@
 .promo {
-    padding:98px 0;
+    padding: 98px 0;
     &__title {
         font-family: 'Montserrat';
         font-weight: 900;
@@ -9,7 +9,8 @@
         text-align: center;
         background: url('@img/404-bg.png') center center/contain no-repeat;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color: transparent;
     }
 
     &__subtitle {
@@ -31,13 +32,13 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        border: 1.5px solid #337D5A;
+        border: 1.5px solid #337d5a;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 16px;
         line-height: 17px;
         color: $first_color;
-        transition: all .2s;
+        transition: all 0.2s;
         svg {
             fill: $first_color;
         }
