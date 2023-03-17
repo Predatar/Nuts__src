@@ -75,7 +75,9 @@
                     @@include('html/personal-cabinet/transaction-history.html', {})
                 </div>
                 <div class="content__tab">sda</div>
-                <div class="content__tab">sad</div>
+                <div class="content__tab">
+                    @@include('html/personal-cabinet/password.html', {})
+                </div>
                 <div class="content__tab">das</div>
             </div>
         </div>
@@ -83,6 +85,8 @@
     @@include('html/footer.html', {theme: 'footer_dark'})
     @@include('html/script.html', {})
     <script src="js/script.personal-cabinet.js"></script>
+    <script src="js/script.order-history.js"></script>
+    <script src="js/script.password.js"></script>
 </body>
 
 </html>

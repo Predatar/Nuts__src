@@ -1,4 +1,5 @@
 .content {
+    padding-bottom: 102px;
     margin: 0 auto;
     width: 1290px;
     display: flex;
@@ -81,7 +82,7 @@
         position: absolute;
         z-index: -10;
         opacity: 0;
-        transition: all 0.2s;
+        transition: all 0.1s;
         &_active {
             z-index: 1 !important;
             opacity: 1 !important;

@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(person);
             if (password.value == person.password) {
                 localStorage.setItem('isLogin', true);
-                document.location.href = '/index.html'
+                localStorage.setItem('nameLogined', person.email);
+                document.location.href = '/index.html';
             } else {
                 alert('Неыерный пароль');
             }
