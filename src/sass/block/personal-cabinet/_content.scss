@@ -6,7 +6,7 @@
     justify-content: space-between;
 
     &__container {
-        margin-top: 50px;
+        margin-top: 44px;
         width: 210px;
         &:last-child {
             width: 992px;
@@ -16,18 +16,20 @@
     &__list {
         &:last-child {
             .content__list-title {
-                margin-top: 40px;
+                margin-top: 27px;
+            }
+            .content__item {
+                line-height: 28px;
             }
         }
     }
 
     &__list-title {
-        margin-bottom: 20px;
+        margin-bottom: 8px;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 18px;
         line-height: 32px;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 
@@ -35,12 +37,11 @@
         width: auto;
     }
     &__item {
-        padding-bottom: 3px;
+        padding-bottom: 5px;
         font-family: 'Raleway';
         font-weight: 500;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.01em;
         color: $third_color;
         cursor: pointer;
         position: relative;

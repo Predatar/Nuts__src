@@ -1,5 +1,6 @@
 .info {
     margin: 0 auto;
+    margin-top: 43px;
     width: 1290px;
     display: flex;
     justify-content: space-between;
@@ -10,17 +11,17 @@
         font-weight: 800;
         font-size: 32px;
         line-height: 32px;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 
     &__wrapper {
-        width: 74%;
+        width: 75%;
         display: flex;
         justify-content: space-between;
     }
 
     &__manager {
+        margin-left: 5px;
     }
 
     &__manager-title {
@@ -29,19 +30,20 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.01em;
+        letter-spacing: -0.009em;
         color: $third_color;
     }
 
     &__manager-link {
-        margin-left: 8px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
-        line-height: 32px;
         letter-spacing: 0.01em;
         color: $first_color;
+        svg {
+            margin-right: 4px;
+        }
     }
 
     &__discount {
@@ -56,7 +58,8 @@
 
 @media (max-width: 1355px) {
     .info {
-        margin: 0 25px;
+        margin-left: 25px;
+        margin-right: 25px;
         width: auto;
         &__title {
             margin-right: 80px;
