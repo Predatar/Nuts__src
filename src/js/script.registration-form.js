@@ -61,9 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
             person.addressCorp = addressCorp.value;
             person.indexCorp = indexCorp.value;
         }
-
-        console.log('form');
-        console.log(person);
         localStorage.setItem(person.email, JSON.stringify(person));
         document.location.href = '/login.html';
     });

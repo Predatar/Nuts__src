@@ -111,26 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             target.classList.add('select__item_active');
             selectRegion.classList.toggle('select__list_show');
-            selectCity = document.querySelector(`.select__list_${region[`${address.region}`]}`);
-            selectCityMas = document.querySelectorAll(
-                `.select__list_${region[`${address.region}`]} .select__item`
-            );
-
-            selectCity.addEventListener('click', ({ target }) => {
-                address.city = target.getAttribute('data-value');
-                inputSelectCity.value = address.city;
-                selectHead[2].innerHTML = target.innerHTML;
-                selectCityMas[0].classList.toggle('select__item_active');
-                selectCity.classList.toggle('select__list_show');
-            });
         });
     });
 
     selectHead[1].addEventListener('click', () => {
         selectRegion.classList.toggle('select__list_show');
-    });
-    selectHead[2].addEventListener('click', () => {
-        selectCity.classList.toggle('select__list_show');
     });
 
     fopInputs.forEach(elem => {
