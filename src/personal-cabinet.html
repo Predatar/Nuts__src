@@ -53,20 +53,34 @@
         <div class="content__container">
             <ul class="content__list">
                 <div class="content__list-title">Мои заказы</div>
-                <li class="content__list-item"><span class="content__item">История заказов</span></li>
-                <li class="content__list-item"><span class="content__item">История транзакций</span></li>
+                <li class="content__list-item"><span class="content__item" data-tag="Order history">История
+                        заказов</span></li>
+                <li class="content__list-item"><span class="content__item" data-tag="Transaction history">История
+                        транзакций</span></li>
             </ul>
             <ul class="content__list">
                 <div class="content__list-title">Моя учетная запись</div>
-                <li class="content__list-item"><span class="content__item">Контактная информация</span></li>
-                <li class="content__list-item"><span class="content__item">Пароль</span></li>
-                <li class="content__list-item"><span class="content__item">Адрес</span></li>
+                <li class="content__list-item"><span class="content__item" data-tag="Contact details">Контактная
+                        информация</span></li>
+                <li class="content__list-item"><span class="content__item" data-tag="Password">Пароль</span></li>
+                <li class="content__list-item"><span class="content__item" data-tag="Address">Адрес</span></li>
             </ul>
         </div>
-        <div class="content__container"></div>
+        <div class="content__container">
+            <div class="content__tabs">
+                <div class="content__tab">asd</div>
+                <div class="content__tab">
+                    @@include('html/personal-cabinet/transaction-history.html', {})
+                </div>
+                <div class="content__tab">sda</div>
+                <div class="content__tab">sad</div>
+                <div class="content__tab">das</div>
+            </div>
+        </div>
     </section>
     @@include('html/footer.html', {theme: 'footer_dark'})
     @@include('html/script.html', {})
+    <script src="js/script.personal-cabinet.js"></script>
 </body>
 
 </html>

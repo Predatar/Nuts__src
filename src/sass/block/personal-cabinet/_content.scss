@@ -1,12 +1,23 @@
 .content {
     margin: 0 auto;
     width: 1290px;
+    display: flex;
+    justify-content: space-between;
 
     &__container {
-        width: 250px;
+        margin-top: 50px;
+        width: 210px;
+        &:last-child {
+            width: 992px;
+        }
     }
 
     &__list {
+        &:last-child {
+            .content__list-title {
+                margin-top: 40px;
+            }
+        }
     }
 
     &__list-title {
@@ -17,9 +28,6 @@
         line-height: 32px;
         letter-spacing: 0.01em;
         color: $third_color;
-        &:last-of-type {
-            margin-top: 40px;
-        }
     }
 
     &__list-item {
@@ -61,6 +69,22 @@
                 transform: scaleX(1);
                 transform-origin: bottom left;
             }
+        }
+    }
+
+    &__tabs {
+        width: 100%;
+        position: relative;
+    }
+    &__tab {
+        width: 100%;
+        position: absolute;
+        z-index: -10;
+        opacity: 0;
+        transition: all 0.2s;
+        &_active {
+            z-index: 1 !important;
+            opacity: 1 !important;
         }
     }
 }
