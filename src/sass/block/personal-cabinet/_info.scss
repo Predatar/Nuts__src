@@ -2,9 +2,9 @@
     margin: 0 auto;
     width: 1290px;
     display: flex;
+    justify-content: space-between;
 
     &__title {
-        margin-right: 80px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 800;
@@ -51,5 +51,53 @@
         font-size: 16px;
         line-height: 32px;
         color: $first_color;
+    }
+}
+
+@media (max-width: 1355px) {
+    .info {
+        margin: 0 25px;
+        width: auto;
+        &__title {
+            margin-right: 80px;
+        }
+        &__wrapper {
+            width: 70%;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .info {
+        &__wrapper {
+            width: 60%;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .info {
+        &__title {
+            margin-right: 0;
+        }
+        &__wrapper {
+            width: auto;
+        }
+        &__discount {
+            display: none;
+        }
+    }
+}
+@media (max-width: 630px) {
+    .info {
+        margin: 0 10px;
+    }
+}
+@media (max-width: 535px) {
+    .info {
+        &__title {
+            width: 150px;
+        }
+        &__manager-title {
+            display: none;
+        }
     }
 }
