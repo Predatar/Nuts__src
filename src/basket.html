@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Орех Причерноморья</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="css/style.basket.min.css">
+</head>
+
+<body>
+    @@include('html/header.html', {})
+    <section class="promo">
+        <div class="promo__wrapper">
+            <div class="promo__path">
+                <a href="@html/index.html" class="promo__path-link">Главная</a>
+                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.00001 10L6.3 9.30002L10.1 5.5H0V4.50002H10.1L6.3 0.700003L7.00001 1.81198e-05L12 5.00001L7.00001 10Z"
+                        fill="#8A8A8A" />
+                </svg>
+
+                Корзина
+            </div>
+        </div>
+    </section>
+    <section class="basket">
+        <table class="basket__table">
+            <thead class="basket__head">
+                <tr class="basket__head-row">
+                    <td class="basket__head-cell">
+                        Товар
+                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.99357 4.43185L1.22265 0.6L0 1.94522L4.99357 7L10 1.94522L8.77735 0.6L4.99357 4.43185Z"
+                                fill="#93B474" />
+                        </svg>
+                    </td>
+                    <td class="basket__head-cell">
+                        Кол - во
+                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.99357 4.43185L1.22265 0.6L0 1.94522L4.99357 7L10 1.94522L8.77735 0.6L4.99357 4.43185Z"
+                                fill="#93B474" />
+                        </svg>
+                    </td>
+                    <td class="basket__head-cell">
+                        Цена за товар
+                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.99357 4.43185L1.22265 0.6L0 1.94522L4.99357 7L10 1.94522L8.77735 0.6L4.99357 4.43185Z"
+                                fill="#93B474" />
+                        </svg>
+                    </td>
+                    <td class="basket__head-cell">
+                        Итоговая стоимость
+                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.99357 4.43185L1.22265 0.6L0 1.94522L4.99357 7L10 1.94522L8.77735 0.6L4.99357 4.43185Z"
+                                fill="#93B474" />
+                        </svg>
+                    </td>
+                </tr>
+            </thead>
+            <tbody class="basket__body">
+                <tr class="basket__body-row">
+                    <td class="basket__body-cell">
+                        Орех соленый 80г.
+                    </td>
+                    <td class="basket__body-cell">
+                        <div class="basket__count">
+                            <div class="basket__arrow-prev">
+                                <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.56815 4.99357L6.4 1.22265L5.05478 0L0 4.99357L5.05478 10L6.4 8.77735L2.56815 4.99357Z" />
+                                </svg>
+                            </div>
+                            <input type="number" name="count" id="count" value="0">
+                            <div class="basket__arrow-next">
+                                <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.43185 4.99357L0.6 1.22265L1.94522 0L7 4.99357L1.94522 10L0.6 8.77735L4.43185 4.99357Z" />
+                                    </svg>                                
+                            </div>
+                        </div>
+                    </td>
+                    <td class="basket__body-cell">
+                        25 грн.
+                    </td>
+                    <td class="basket__body-cell">
+                        100 грн.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    @@include('html/footer.html', {theme: 'footer_dark'})
+</body>
+
+</html>

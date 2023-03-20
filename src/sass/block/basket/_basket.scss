@@ -1,0 +1,90 @@
+.basket {
+    &__table {
+        margin: 0 auto;
+        width: 1290px;
+        border-collapse: collapse;
+    }
+
+    &__head {
+        height: 68px;
+        background-color: $second_bg_color;
+    }
+
+    &__head-row {
+    }
+
+    &__head-cell {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        color: $third_color;
+    }
+
+    &__body {
+    }
+
+    &__body-row {
+        height: 62px;
+        transition: all 0.2s;
+        &:hover {
+            background: rgba(51, 125, 90, 0.1);
+        }
+    }
+
+    &__body-cell {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    &__count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            padding-left: 17px;
+            width: 44px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: none;
+            &:focus {
+                outline-color: $first_color;
+            }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            display: none;
+            /* -webkit-appearance: none;
+            margin: 0; */ /* <-- Apparently some margin are still there even though it's hidden */
+        }
+    }
+
+    &__arrow-prev,
+    &__arrow-next {
+        cursor: pointer;
+        svg {
+            fill: $fourth_color;
+            transition: all 0.2s;
+        }
+        &:hover {
+            svg {
+                fill: $first_color;
+            }
+        }
+    }
+
+    &__arrow-prev {
+        margin-right: 9px;
+    }
+
+    &__arrow-next {
+        margin-left: 9px;
+    }
+}
