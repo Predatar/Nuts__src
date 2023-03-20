@@ -1,0 +1,93 @@
+.contact {
+    &__fop {
+    }
+
+    &__form {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__form-container {
+        width: 474px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__input {
+        margin-top: 15px;
+        padding: 17px;
+        height: 47px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $third_color;
+        &:focus {
+            outline-color: $first_color;
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__btn {
+        margin-top: 16px;
+        width: 229px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $first_color;
+        background-color: $first_color;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        color: $default_color;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            color: $first_color;
+            background-color: $default_color;
+        }
+    }
+
+    &__img {
+        opacity: 0;
+        position: absolute;
+        z-index: -10;
+    }
+
+    &__label {
+        cursor: pointer;
+        padding-bottom: 7px;
+        width: 131px;
+        height: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('@img/thumbnail.png');
+    }
+
+    &__label-text {
+        padding-bottom: 3px;
+        border-bottom: 1.5px dashed #ffffff;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 17px;
+        color: $default_color;
+    }
+
+    &__corp {
+        .contact__label {
+            margin-top: 30px;
+        }
+    }
+
+    &_hide {
+        display: none;
+    }
+}
