@@ -28,6 +28,7 @@
     &__body-row {
         height: 62px;
         transition: all 0.2s;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
         &:hover {
             background: rgba(51, 125, 90, 0.1);
         }
@@ -54,6 +55,7 @@
             justify-content: center;
             border: 1px solid rgba(0, 0, 0, 0.15);
             border-radius: none;
+            transition: all 0.2s;
             &:focus {
                 outline-color: $first_color;
             }
@@ -63,6 +65,11 @@
             display: none;
             /* -webkit-appearance: none;
             margin: 0; */ /* <-- Apparently some margin are still there even though it's hidden */
+        }
+        &_active {
+            input {
+                border: 1px solid $first_color;
+            }
         }
     }
 
@@ -86,5 +93,92 @@
 
     &__arrow-next {
         margin-left: 9px;
+    }
+}
+.action {
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 1290px;
+    display: flex;
+    justify-content: space-between;
+    &__back {
+        width: 249px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $first_color;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        color: $first_color;
+        transition: all 0.2s;
+        svg {
+            margin-right: 12px;
+            fill: $first_color;
+            transition: all 0.2s;
+        }
+        &:hover {
+            color: $default_color;
+            background-color: $first_color;
+            svg {
+                fill: $default_color;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__total {
+        display: flex;
+    }
+
+    &__text {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        color: $third_color;
+    }
+
+    &__price {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 32px;
+        color: $first_color;
+        span {
+            margin-left: 10px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            color: $first_color;
+        }
+    }
+
+    &__complete {
+        margin-left: 28px;
+        width: 249px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $first_color;
+        border: 1px solid $first_color;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        color: $default_color;
+        transition: all 0.2s;
+        &:hover {
+            color: $first_color;
+            background-color: $default_color;
+        }
     }
 }
