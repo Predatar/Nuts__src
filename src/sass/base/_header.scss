@@ -64,6 +64,7 @@
         justify-content: center;
         border-bottom: 1px solid #f0f0f0;
         &-wrapper {
+            position: relative;
             width: 1290px;
             display: flex;
             justify-content: space-between;
@@ -178,6 +179,7 @@
     &__bag {
         margin-right: 6px;
         position: relative;
+        cursor: pointer;
         &-counter {
             position: absolute;
             top: 0;
@@ -642,6 +644,176 @@
     }
 }
 
+.mini-basket {
+    padding: 18px 30px 25px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 10;
+    opacity: 1;
+    width: 468px;
+    border: 1px solid $first_color;
+    background-color: $default_color;
+    transition: all 0.3s;
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    &__body {
+    }
+
+    &__body-row {
+        padding-top: 14px;
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    &__body-cell {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: $third_color;
+    }
+
+    &__count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            padding-left: 17px;
+            width: 44px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: none;
+            transition: all 0.2s;
+            &:focus {
+                outline-color: $first_color;
+            }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            display: none;
+            /* -webkit-appearance: none;
+            margin: 0; */ /* <-- Apparently some margin are still there even though it's hidden */
+        }
+        &_active {
+            input {
+                border: 1px solid $first_color;
+            }
+        }
+    }
+
+    &__arrow-prev,
+    &__arrow-next {
+        cursor: pointer;
+        svg {
+            fill: $fourth_color;
+            transition: all 0.2s;
+        }
+        &:hover {
+            svg {
+                fill: $first_color;
+            }
+        }
+    }
+
+    &__arrow-prev {
+        margin-right: 9px;
+    }
+
+    &__arrow-next {
+        margin-left: 9px;
+    }
+
+    &__price {
+    }
+
+    &__exit {
+        cursor: pointer;
+        svg {
+            vertical-align: middle;
+            fill: #c4c4c4;
+            transition: all 0.2s;
+        }
+        &:hover {
+            svg {
+                fill: #337d5a;
+            }
+        }
+    }
+
+    &__action {
+        margin-top: 20px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    &__action-total {
+        display: flex;
+    }
+
+    &__action-text {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        color: $third_color;
+    }
+
+    &__action-price {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 32px;
+        color: $first_color;
+    }
+
+    &__action-price-total {
+        margin-left: 8px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        color: $first_color;
+    }
+
+    &__action-complete {
+        margin-left: 12px;
+        width: 191px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $first_color;
+        border: 1px solid $first_color;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        color: $default_color;
+        transition: all 0.2s;
+        &:hover {
+            background-color: $default_color;
+            color: $first_color;
+        }
+    }
+
+    &_hide {
+        opacity: 0 !important;
+        z-index: -10 !important;
+    }
+}
+
 @media (max-width: 1440px) {
     .header {
         &__top {
@@ -793,101 +965,3 @@
         }
     }
 }
-
-/* 
-.header {
-    height: 179px;
-
-    &__top {
-        &-wrapper {
-        }
-        &-social {
-            &-item {
-            }
-        }
-        &-link {
-            &-img {
-            }
-        }
-    }
-
-    &__middle {
-        &-wrapper {
-        }
-    }
-
-    &__logo {
-        &-img {
-        }
-    }
-
-    &__title {
-    }
-
-    &__contacts {
-        &-group {
-        }
-    }
-
-    &__social {
-        &-item {
-        }
-        &-link {
-        }
-    }
-
-    &__contact {
-    }
-
-    &__order {
-        &-btn {
-        }
-        &-text {
-        }
-    }
-
-    &__bag {
-        &-counter {
-        }
-    }
-
-    &__bottom {
-        &-wrapper {
-        }
-    }
-
-    &__navigation {
-    }
-
-    &__list {
-        &-item {
-        }
-        &-link {
-        }
-    }
-}
-.personal-discount {
-}
-.user-unit {
-    &__login {
-        &-link {
-        }
-        &-img {
-        }
-        &-text {
-        }
-    }
-
-    &__registration {
-        &-link {
-        }
-    }
-
-    &__language {
-        &-link {
-        }
-        &-arrow {
-        }
-    }
-}
- */

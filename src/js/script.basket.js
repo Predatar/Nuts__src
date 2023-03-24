@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const addActiveClassToBasketCount = i => {
         removeActiveClassToBasketCount(i);
         basketCount[i].classList.add('basket__count_active');
-        console.log('addBtn');
     };
     const calculateTotalPrice = () => {
         const newMass = [];

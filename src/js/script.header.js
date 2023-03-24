@@ -64,4 +64,86 @@ document.addEventListener('DOMContentLoaded', () => {
         default:
             break;
     }
+
+    const bag = document.querySelector('.header__bag');
+    const miniBasket = document.querySelector('.mini-basket');
+
+    bag.addEventListener('click', () => { 
+            miniBasket.classList.toggle('mini-basket_hide');
+            console.log('mini-basket');
+        
+    });
+
+    const btnMiniPrev = document.querySelectorAll('.mini-basket__arrow-prev');
+    const btnMiniNext = document.querySelectorAll('.mini-basket__arrow-next');
+    const inputMiniCount = document.querySelectorAll('#countMini');
+    const cost = document.querySelectorAll('.mini-basket__price');
+    const totalPrice = document.querySelector('.mini-basket__action-price-total');
+    const miniBasketCount = document.querySelectorAll('.mini-basket__count');
+    const miniProductPrice = document.querySelectorAll('.mini-basket__product-price');
+    let indexPrev;
+
+    const removeActiveClassToBasketCountMini = i => {
+        if (Number.isInteger(i)) {
+            miniBasketCount[i].classList.remove('mini-basket__count_active');
+        } else {
+            miniBasketCount.forEach(elem => {
+                elem.classList.contains('mini-basket__count_active')
+                    ? elem.classList.remove('mini-basket__count_active')
+                    : null;
+            });
+        }
+    };
+    const addActiveClassToBasketCountMini = i => {
+        removeActiveClassToBasketCountMini(i);
+        miniBasketCount[i].classList.add('mini-basket__count_active');
+    };
+    const calculateTotalPriceMini = () => {
+        const newMass = [];
+        const initialValue = 0;
+
+        cost.forEach(elem => {
+            newMass.push(+elem.innerHTML);
+        });
+
+        totalPrice.innerHTML = newMass.reduce(
+            (accumulator, currentValue) => accumulator + currentValue,
+            initialValue
+        );
+    };
+    const calculateTotalPriceProductMini = i => {
+        cost[i].innerHTML = +inputMiniCount[i].value * +miniProductPrice[i].innerHTML;
+        calculateTotalPriceMini();
+    };
+
+    for (let i = 0; i < cost.length; i++) {
+        calculateTotalPriceProductMini(i);
+    }
+
+    btnMiniPrev.forEach((elem, index) => {
+        elem.addEventListener('click', () => {
+            if (indexPrev != index) {
+                addActiveClassToBasketCountMini(index);
+            }
+            --inputMiniCount[index].value;
+            calculateTotalPriceProductMini(index);
+            indexPrev = index;
+            setTimeout(() => {
+                removeActiveClassToBasketCountMini(index);
+            }, 2000);
+        });
+    });
+    btnMiniNext.forEach((elem, index) => {
+        elem.addEventListener('click', () => {
+            if (indexPrev != index) {
+                addActiveClassToBasketCountMini(index);
+            }
+            ++inputMiniCount[index].value;
+            calculateTotalPriceProductMini(index);
+            indexPrev = index;
+            setTimeout(() => {
+                removeActiveClassToBasketCountMini(index);
+            }, 2000);
+        });
+    });
 });
