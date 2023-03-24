@@ -251,32 +251,35 @@
             <div class="ordering__title">
                 2. Способ доставки
             </div>
-            <input type="radio" name="delivery" id="novaPoshta" class="ordering__radio">
-            <label for="novaPoshta" class="ordering__label">Новая почта (по Украине, оплата за счет Клиента)</label>
-            <div class="address">
-                <div class="address__country">
-                    <input class="select__input" type="text" required name="country" id="country">
-                    <div class="select__head">Страна</div>
-                    <ul class="select__list">
-                        <li class="select__item" data-value="ukr">Украина</li>
-                    </ul>
+            <fieldset class="ordering__delivery">
+                <input type="radio" name="delivery" id="novaPoshta" class="ordering__radio">
+                <label for="novaPoshta" class="ordering__label">Новая почта (по Украине, оплата за счет Клиента)</label>
+                <div class="address">
+                    <div class="address__country">
+                        <input class="select__input" type="text" required name="country" id="country">
+                        <div class="select__head">Страна</div>
+                        <ul class="select__list">
+                            <li class="select__item" data-value="ukr">Украина</li>
+                        </ul>
+                    </div>
+                    <div class="address__region">
+                        <input class="select__input" type="text" required name="region" id="region">
+                        <div class="select__head">Область</div>
+                        <ul class="select__list select__list_ukr">
+                            <li class="select__item" data-value="Kharkiv region">Харьковская обл.</li>
+                            <li class="select__item" data-value="Kyiv region">Киевская обл.</li>
+                            <li class="select__item" data-value="Lviv region">Львовская обл.</li>
+                            <li class="select__item" data-value="Odesa region">Одесская обл.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="address__region">
-                    <input class="select__input" type="text" required name="region" id="region">
-                    <div class="select__head">Область</div>
-                    <ul class="select__list select__list_ukr">
-                        <li class="select__item" data-value="Kharkiv region">Харьковская обл.</li>
-                        <li class="select__item" data-value="Kyiv region">Киевская обл.</li>
-                        <li class="select__item" data-value="Lviv region">Львовская обл.</li>
-                        <li class="select__item" data-value="Odesa region">Одесская обл.</li>
-                    </ul>
-                </div>
-            </div>
-            <input type="radio" name="delivery" id="courier" class="ordering__radio">
-            <label for="courier" class="ordering__label">Курьер по Одессе </label>
-            <input type="text" name="address" id="address" placeholder="Адрес*" required>
-            <input type="radio" name="delivery" id="selfDelivery" class="ordering__radio">
-            <label for="selfDelivery" class="ordering__label">Самовывоз со склада</label>
+                <input type="radio" name="delivery" id="courier" class="ordering__radio">
+                <label for="courier" class="ordering__label">Курьер по Одессе </label>
+                <input type="text" name="address" id="address" placeholder="Адрес*" required>
+                <input type="radio" name="delivery" id="selfDelivery" class="ordering__radio">
+                <label for="selfDelivery" class="ordering__label">Самовывоз со склада</label>
+                
+            </fieldset>
             <div class="ordering__title">
                 3. Способ оплаты
             </div>
@@ -290,6 +293,8 @@
         </form>
     </section>
     @@include('html/footer.html', {theme: 'footer_dark'})
+    <script src="js/script.header.js"></script>
+    <script src="js/script.ordering.js"></script>
 </body>
 
 </html>
