@@ -91,5 +91,22 @@
         &__wrapper {
             margin: 0 10px;
         }
+        &__main {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__manager {
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .promo {
+        &__main {
+            align-items: center;
+        }
+        &__manager-title {
+            display: none;
+        }
     }
 }

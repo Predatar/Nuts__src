@@ -311,7 +311,7 @@
             flex-direction: column;
             &-container {
                 margin-top: 50px;
-                width: 695px;
+                width: 710px;
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
@@ -385,10 +385,6 @@
         &__map {
             width: 100%;
         }
-    }
-}
-@media (max-width: 745px) {
-    .footer {
         &__info {
             &-container {
                 width: 100%;

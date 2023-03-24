@@ -74,9 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const info = document.querySelector('.info');
+    const basket = document.querySelector('.basket')
     const isLogin = localStorage.getItem('isLogin');
 
     if (isLogin == 'true') {
         info.classList.add('info_hide');
+        basket.style.paddingBottom = '93px';
     }
 });
