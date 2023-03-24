@@ -208,6 +208,9 @@
     .action {
         flex-direction: column;
         gap: 25px;
+        &__wrapper {
+            justify-content: end;
+        }
     }
 }
 @media (max-width: 630px) {
@@ -228,7 +231,7 @@
         }
     }
     .action {
-        align-items: center;
+        align-items: end;
         &__wrapper {
             flex-direction: column;
         }

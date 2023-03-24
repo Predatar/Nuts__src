@@ -9,22 +9,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const addressSelect = document.querySelector('.address');
     const addressInput = document.querySelector('#address');
-    const delivery = document.querySelector('.ordering__delivery');
+    const delivery = document.querySelectorAll('.ordering__radio');
+    const masDelivery = [delivery[0], delivery[1], delivery[2]];
 
-    delivery.addEventListener('click', ({target}) => {
-        if (target.id == 'novaPoshta') {
-            addressSelect.classList.add('address_show');
-        } else if (target.id == 'courier') {
-            addressInput.classList.add('address_show');
-        } else if (target.classList.contains('select__head') || target.localname == li) {
-        } else {
-            addressSelect.classList.contains('address_show')
-                ? addressSelect.classList.remove('address_show')
-                : null;
-            addressInput.classList.contains('address_show')
-                ? addressInput.classList.remove('address_show')
-                : null;
-        }
+    const removeActiveClassFromAddressInput = () => {
+        addressSelect.classList.contains('address_show')
+                    ? addressSelect.classList.remove('address_show')
+                    : null;
+                addressInput.classList.contains('address_show')
+                    ? addressInput.classList.remove('address_show')
+                    : null;
+    }
+
+    masDelivery.forEach(elem => {
+        elem.addEventListener('click', ({ target }) => {
+            if (target.id == masDelivery[0].id) {
+                removeActiveClassFromAddressInput();
+                addressSelect.classList.add('address_show');
+            } else if (target.id == masDelivery[1].id) {
+                removeActiveClassFromAddressInput();
+                addressInput.classList.add('address_show');
+            } else {
+                removeActiveClassFromAddressInput();
+            }
+        });
     });
 
     const inputSelectCountry = document.querySelector('#country');
@@ -33,11 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectHead = document.querySelectorAll('.select__head');
     const selectList = document.querySelector('.address__country .select__list');
 
-    let selectListMas = document.querySelectorAll(
-        '.address__country .select__list .select__item'
-    ),
-    selectRegion,
-    selectRegionMas;
+    let selectListMas = document.querySelectorAll('.address__country .select__list .select__item'),
+        selectRegion,
+        selectRegionMas;
 
     const address = {
         country: '',
@@ -91,5 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     selectHead[1].addEventListener('click', () => {
         selectRegion.classList.toggle('select__list_show');
+    });
+
+    const orderingForm = document.querySelector('.ordering__form');
+
+    orderingForm.addEventListener('submit', e => {
+        e.preventDefault();
+        document.location.href('@html/order-placed.html');
     });
 });
