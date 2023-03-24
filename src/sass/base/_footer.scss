@@ -1,5 +1,7 @@
 .footer {
-    padding-top: 101px;
+    &__container {
+        padding-top: 101px;
+    }
     &__info {
         margin: 0 auto;
         width: 1290px;
@@ -152,7 +154,7 @@
 
     &__navigation {
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 43px;
         width: 1290px;
         padding-bottom: 27px;
         display: flex;
@@ -269,6 +271,7 @@
     }
 
     &_dark {
+        padding-bottom: 90px;
         background-color: $second_bg_color;
     }
 }

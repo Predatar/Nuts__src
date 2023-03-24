@@ -164,12 +164,23 @@
         line-height: 20px;
         letter-spacing: 0.01em;
         color: $third_color;
+        transition: all 0.2s;
+        &:hover {
+            color: $first_color;
+            .aside__link-img {
+                svg {
+                    fill: $first_color;
+                }
+            }
+        }
     }
 
     &__link-img {
         margin-left: 8px;
-        width: 18px;
-        height: 8px;
+        svg {
+            fill: $third_color;
+            transition: all 0.2s;
+        }
     }
 
     &__ad {
