@@ -1,0 +1,123 @@
+<section class="address">
+    <div class="address__fop">
+        <form class="address__form">
+            <div class="address__fop-title">Адрес</div>
+            <div class="address__country">
+                <input class="select__input" type="text" required name="countryFop" id="countryFop">
+                <div class="select__head">Страна</div>
+                <ul class="select__list">
+                    <li class="select__item" data-value="rus">Россия</li>
+                    <li class="select__item" data-value="ukr">Украина</li>
+                    <li class="select__item" data-value="blr">Беларусь</li>
+                </ul>
+            </div>
+            <div class="address__region">
+                <input class="select__input" type="text" required name="regionFop" id="regionFop">
+                <div class="select__head">Область</div>
+                <ul class="select__list select__list_rus">
+                    <li class="select__item" data-value="Moscow region">Московская обл.</li>
+                    <li class="select__item" data-value="Nizhny Novgorod region">Нижегородская обл.</li>
+                    <li class="select__item" data-value="Leningrad region">Ленинградская обл.</li>
+                </ul>
+                <ul class="select__list select__list_ukr">
+                    <li class="select__item" data-value="Kharkiv region">Харьковская обл.</li>
+                    <li class="select__item" data-value="Kyiv region">Киевская обл.</li>
+                    <li class="select__item" data-value="Lviv region">Львовская обл.</li>
+                    <li class="select__item" data-value="Odesa region">Одесская обл.</li>
+                </ul>
+                <ul class="select__list select__list_blr">
+                    <li class="select__item" data-value="Minsk region">Минская обл.</li>
+                </ul>
+            </div>
+            <input class="address__city" type="text" required name="cityFop" id="cityFop" placeholder="Город*">
+            <input class="address__address" type="text" required id="addressFop" name="addressFop" placeholder="Адрес">
+            <button class="address__btn">Сохранить</button>
+        </form>
+    </div>
+    <div class="address__corp">
+        <form class="address__form">
+            <div class="address__corp-title">
+                1. Реквизиты
+            </div>
+            <input type="text" required placeholder="ОКПО" name="OKPO" id="OKPO" required class="address__OKPO">
+            <div class="address__corp-title">
+                2. Адрес
+            </div>
+            <div class="address__country">
+                <input class="select__input" type="text" required name="countryCorp" id="countryCorp">
+                <div class="select__head">Страна</div>
+                <ul class="select__list">
+                    <li class="select__item" data-value="rus">Россия</li>
+                    <li class="select__item" data-value="ukr">Украина</li>
+                    <li class="select__item" data-value="blr">Беларусь</li>
+                </ul>
+            </div>
+            <div class="address__region">
+                <input class="select__input" type="text" required name="regionCorp" id="regionCorp">
+                <div class="select__head">Область</div>
+                <ul class="select__list select__list_rus">
+                    <li class="select__item" data-value="Moscow region">Московская обл.</li>
+                    <li class="select__item" data-value="Nizhny Novgorod region">Нижегородская обл.</li>
+                    <li class="select__item" data-value="Leningrad region">Ленинградская обл.</li>
+                </ul>
+                <ul class="select__list select__list_ukr">
+                    <li class="select__item" data-value="Kharkiv region">Харьковская обл.</li>
+                    <li class="select__item" data-value="Kyiv region">Киевская обл.</li>
+                    <li class="select__item" data-value="Lviv region">Львовская обл.</li>
+                    <li class="select__item" data-value="Odesa region">Одесская обл.</li>
+                </ul>
+                <ul class="select__list select__list_blr">
+                    <li class="select__item" data-value="Minsk region">Минская обл.</li>
+                </ul>
+            </div>
+            <input class="address__city" type="text" required name="cityCorp" id="cityCorp" placeholder="Город*">
+            <input class="address__address" type="text" required id="addressCorp" name="addressCorp"
+                placeholder="Адрес">
+            <div class="address__corp-title">
+                3. Юридический адрес
+            </div>
+            <div class="address__country">
+                <input class="select__input" type="text" required name="countryLegal" id="countryLegal">
+                <div class="select__head">Страна</div>
+                <ul class="select__list">
+                    <li class="select__item" data-value="rus">Россия</li>
+                    <li class="select__item" data-value="ukr">Украина</li>
+                    <li class="select__item" data-value="blr">Беларусь</li>
+                </ul>
+            </div>
+            <div class="address__region">
+                <input class="select__input" type="text" required name="regionLegal" id="regionLegal">
+                <div class="select__head">Область</div>
+                <ul class="select__list select__list_rus">
+                    <li class="select__item" data-value="Moscow region">Московская обл.</li>
+                    <li class="select__item" data-value="Nizhny Novgorod region">Нижегородская обл.</li>
+                    <li class="select__item" data-value="Leningrad region">Ленинградская обл.</li>
+                </ul>
+                <ul class="select__list select__list_ukr">
+                    <li class="select__item" data-value="Kharkiv region">Харьковская обл.</li>
+                    <li class="select__item" data-value="Kyiv region">Киевская обл.</li>
+                    <li class="select__item" data-value="Lviv region">Львовская обл.</li>
+                    <li class="select__item" data-value="Odesa region">Одесская обл.</li>
+                </ul>
+                <ul class="select__list select__list_blr">
+                    <li class="select__item" data-value="Minsk region">Минская обл.</li>
+                </ul>
+            </div>
+            <input class="address__city" type="text" required name="cityLegal" id="cityLegal" placeholder="Город*">
+            <input class="address__address" type="text" required id="addressLegal" name="addressLegal"
+                placeholder="Адрес">
+            <input type="text" required id="index" name="index" class="address__index" placeholder="Индекс">
+            <button class="address__btn">Сохранить</button>
+        </form>
+        <aside class="aside">
+            <div class="aside__bg-img">
+                <img src="@img/profile-aside-bg.png" alt="profile-aside-bg">
+            </div>
+            <div class="aside__title">Орех
+                Причерноморья</div>
+            <div class="aside__subtitle">Единственный в Украине сад
+                совместного выращивания
+                фундука и грецкого ореха</div>
+        </aside>
+    </div>
+</section>
