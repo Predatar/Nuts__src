@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ оформлен - Орех Причерноморья</title>
+    @@include('html/head.html', {})
+    <link rel="stylesheet" href="css/style.order-placed.min.css">
+</head>
+
+<body>
+    @@include('html/header.html', {})
+    <section class="promo">
+        <div class="promo__bg-img">
+            <img src="@img/for-clients/walnut-bg.png" alt="nuts">
+        </div>
+        <div class="promo__title">Благодарим Вас за заказ!</div>
+        <div class="promo__subtitle">Наши менеджеры свяжутся с Вами
+            в ближайшее время</div>
+    </section>
+    @@include('html/footer.html', {theme: 'footer_dark'})
+    <script src="js/script.header.js"></script>
+</body>
+
+</html>
