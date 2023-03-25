@@ -38,6 +38,7 @@
         justify-content: center;
         flex-direction: column;
         overflow: hidden;
+        transition: all 0.2s;
         &::after {
             content: '';
             width: 150%;
@@ -52,6 +53,12 @@
         &:hover {
             .benefits-products__group-subtitle {
                 height: 207px;
+            }
+            .benefits-products__img {
+                margin-top: 44px;
+            }
+            .benefits-products__group-title {
+                margin-top: 15px;
             }
             &::after {
                 transform: scaleY(1);
@@ -80,17 +87,17 @@
     }
 
     &__img {
+        margin-top: 30px;
         width: 48px;
         z-index: 1;
     }
 
     &__group-title {
-        margin-top: 24px;
+        margin-top: 20px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 40px;
         line-height: 47px;
-        letter-spacing: 0.01em;
         color: $default_color;
         z-index: 1;
     }

@@ -14,6 +14,8 @@
     }
 
     &__title {
+        margin-top: 1px;
+        margin-left: -3px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 45px;
@@ -52,6 +54,9 @@
             width: 22px;
             height: 18px;
         }
+        &__btn-next {
+            padding-right: 7px;
+        }
     }
 
     &__slider {
@@ -66,6 +71,7 @@
     }
 
     &__slide {
+        position: relative;
         padding-bottom: 34px;
         width: 408px;
         background-color: $default_color;
@@ -74,6 +80,30 @@
     &__img {
         width: 100%;
         height: 270px;
+    }
+
+    &__play {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        top: 105px;
+        transform: translateX(-50%);
+        width: 61px;
+        height: 61px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 2px solid $default_color;
+        transition: all 0.2s;
+        &:hover {
+            border: none;
+            background-color: $first_color;
+        }
+        &-img {
+            width: 10px;
+            height: 14px;
+        }
     }
 
     &__date {
@@ -125,7 +155,7 @@
         &:hover {
             color: $first_color;
             .mini-news__link-img {
-                svg{
+                svg {
                     fill: $first_color;
                 }
             }
@@ -136,7 +166,7 @@
         margin-left: 8px;
         svg {
             fill: $third_color;
-            transition: all .2s;
+            transition: all 0.2s;
         }
     }
 

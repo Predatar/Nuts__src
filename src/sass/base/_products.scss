@@ -1,5 +1,5 @@
 .products {
-    padding-top: 66px;
+    padding-top: 61px;
 
     &__group {
         margin: 0 auto;
@@ -26,6 +26,11 @@
                 display: flex;
             }
         }
+        &:nth-child(n+4) {
+            .products__title {
+                margin-top: -3px;
+            }
+        }
     }
 
     &__slider {
@@ -45,6 +50,7 @@
             width: 109px;
             height: 235px;
             &_wider {
+                margin-top: 5px;
                 width: 243px;
                 height: 191px;
             }
@@ -54,7 +60,7 @@
     &__search {
         z-index: 2;
         position: absolute;
-        top: 45%;
+        top: 53%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 45px;
@@ -95,6 +101,9 @@
         line-height: 21px;
         letter-spacing: 0.01em;
         color: $third_color;
+        &:nth-of-type(n+4) {
+            margin-top: -3px;
+        }
     }
 
     &__article-number {
@@ -109,7 +118,7 @@
     }
 
     &__descr {
-        margin-top: 11px;
+        margin-top: 12px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 600;
@@ -153,7 +162,8 @@
     }
 
     &__scales {
-        width: 18px;
+        margin-top: -6px;
+        width: 20px;
         height: 18px;
     }
 
@@ -163,8 +173,9 @@
         display: flex;
         align-items: center;
         &-img {
+            margin-top: -5px;
             width: 12px;
-            height: 17px;
+            height: 18px;
         }
         &-text {
             margin-left: 14px;
@@ -244,6 +255,7 @@
     }
 
     &__btn {
+        margin-top: 3px;
         width: 124px;
         height: 41px;
         display: flex;
@@ -283,10 +295,14 @@
             width: 23px;
             height: 19px;
             display: none;
+            top: 59%;
             transition: all 0.1s;
             &::after {
                 display: none;
             }
+        }
+        &-next {
+            margin-right: 5px;
         }
     }
 }

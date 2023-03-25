@@ -1,5 +1,13 @@
 @import 'base/variables';
 
 @import 'base/header';
+.promo__link {
+    svg {
+        margin-left: 12px !important;
+    }
+}
 @import 'block/404/promo';
 @import 'base/footer';
+.footer__navigation {
+    margin-top: 43px !important;
+}

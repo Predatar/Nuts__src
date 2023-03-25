@@ -3,5 +3,17 @@
 @import 'base/header';
 @import 'block/news/promo';
 @import 'block/news/news';
+.news {
+    gap: 58px;
+}
+.news__items-wrapper {
+    top: 51%;
+}
+.news__link {
+    margin-top: 7px;
+}
 @import 'base/mini-news';
 @import 'base/footer';
+.footer__navigation {
+    margin-top: 42px;
+}

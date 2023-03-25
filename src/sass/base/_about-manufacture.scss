@@ -33,6 +33,12 @@
             font-weight: 600;
             color: $first_color;
         }
+        &-text {
+            margin-top: 45px;
+            &:last-child {
+                margin-top: 25px;
+            }
+        }
     }
     &__hidden-text {
         display: none;

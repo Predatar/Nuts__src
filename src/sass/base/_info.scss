@@ -12,6 +12,22 @@
     }
 
     &__group-item {
+        &:nth-child(2) {
+            padding-left: 88px;
+        }
+        &:nth-child(3) {
+            padding-left: 15px;
+        }
+        &:last-child {
+            .info__title {
+                &::after {
+                    content: '%';
+                }
+            }
+            .info__subtitle {
+                margin-right: -12px;
+            }
+        }
     }
 
     &__title {
@@ -26,6 +42,8 @@
         &::after {
             content: 'Га';
             position: absolute;
+            margin-top: -3px;
+            margin-left: 5px;
             top: 0;
             font-family: 'Raleway';
             font-weight: 900;
@@ -37,7 +55,7 @@
     }
 
     &__subtitle {
-        margin-top: 20px;
+        margin-top: 17px;
         font-family: 'Raleway';
         font-weight: 400;
         font-size: 18px;

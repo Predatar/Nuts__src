@@ -4,5 +4,61 @@
 @import 'block/payment/promo';
 @import 'block/payment/information';
 @import 'block/payment/target';
+.target__title {
+    margin-top: 3px !important;
+}
+/* .information__list-item {
+    padding-left: 22px;
+    margin-top: -4px;
+    
+} */
+body
+    > section.information
+    > div.information__group
+    > ul
+    > li:nth-child(2)
+    > div.information__list-img {
+    margin-left: 15px;
+}
+body
+    > section.information
+    > div.information__group
+    > ul
+    > li:nth-child(2)
+    > div.information__list-title {
+    margin-top: -10px;
+}
+body
+    > section.information
+    > div.information__group
+    > ul
+    > li.information__list-item.information__list-item_active
+    > div.information__list-title {
+    margin-top: -10px;
+}
+body
+    > section.information
+    > div.information__group
+    > ul
+    > li.information__list-item.information__list-item_active
+    > div.information__list-img {
+    margin-top: -10px;
+}
+body
+    > section.information
+    > div.information__group
+    > ul
+    > li:nth-child(3)
+    > div.information__list-title {
+    margin-top: -10px;
+}
+body
+    > section.information
+    > div.information__group
+    > ul
+    > li:nth-child(3)
+    > div.information__list-img {
+    margin-top: -10px;
+}
 @import 'base/info';
 @import 'base/footer';

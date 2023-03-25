@@ -6,4 +6,16 @@
 @import 'block/for-clients/catalog';
 @import 'base/info';
 @import 'base/eco';
+.eco {
+    padding: 231px 0 278px;
+}
+.eco__title {
+    margin-top: 23px;
+    padding-right: 16px;
+    letter-spacing: normal;
+}
+.eco__subtitle {
+    padding-left: 9px;
+    margin-top: 27px;
+}
 @import 'base/footer';
