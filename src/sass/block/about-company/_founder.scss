@@ -78,7 +78,9 @@
     }
 
     &__history {
+        position: relative;
         margin-left: 66px;
+        overflow: hidden;
         padding: 31px 34px 55px 47px;
         width: 453px;
         height: 100%;
@@ -102,6 +104,12 @@
         font-size: 14px;
         line-height: 21px;
         color: $default_color;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: -26px;
+        right: -88px;
     }
 }
 

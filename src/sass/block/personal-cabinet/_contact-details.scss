@@ -58,6 +58,7 @@
         opacity: 0;
         position: absolute;
         z-index: -10;
+        width: 10px;
     }
 
     &__label {
@@ -89,5 +90,20 @@
 
     &_hide {
         display: none;
+    }
+}
+
+@media (max-width: 630px) {
+    .contact__form-container {
+        width: auto;
+    }
+}
+@media (max-width: 425px) {
+    .contact__form {
+        flex-direction: column-reverse;
+    }
+    .contact__btn {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

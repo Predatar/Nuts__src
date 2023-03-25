@@ -57,6 +57,7 @@
     &__group-side {
         padding: 77px 0 0 39px;
         position: absolute;
+        overflow: hidden;
         top: 0;
         left: -100%;
         width: 100%;
@@ -84,8 +85,15 @@
         color: $default_color;
     }
 
+    &__group-side-img {
+        position: absolute;
+        bottom: -56px;
+        right: -118px;
+    }
+
     &__group-wrapper {
         position: absolute;
+        width: 94%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -22%);
@@ -122,8 +130,9 @@
         color: $default_color;
     }
     &__group-subtitle {
+        margin: 0 auto;
         margin-top: 12px;
-        width: 563px;
+        max-width: 563px;
         font-family: 'Montserrat';
         font-weight: 500;
         font-size: 14px;

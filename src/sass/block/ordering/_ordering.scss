@@ -33,11 +33,15 @@
             color: $third_color;
             border: 0.5px solid rgba(0, 0, 0, 0.15);
             outline: none;
+            transition: all 0.2s;
             &:first-of-type {
                 margin-top: 0;
             }
             &:focus {
                 border-color: $first_color;
+            }
+            &:hover {
+                background-color: rgba(51, 125, 90, 0.1);
             }
         }
     }
@@ -48,7 +52,8 @@
         flex-direction: column;
     }
 
-    &__delivery {
+    &__delivery,
+    &__payment {
         display: flex;
         flex-direction: column;
         border: none;

@@ -252,7 +252,7 @@
                 2. Способ доставки
             </div>
             <fieldset class="ordering__delivery">
-                <input type="radio" name="delivery" id="novaPoshta" class="ordering__radio">
+                <input type="radio" name="delivery" id="novaPoshta" class="ordering__radio" required>
                 <label for="novaPoshta" class="ordering__label">Новая почта (по Украине, оплата за счет Клиента)</label>
                 <div class="address">
                     <div class="address__country">
@@ -283,12 +283,14 @@
             <div class="ordering__title">
                 3. Способ оплаты
             </div>
-            <input type="radio" name="payment" id="nonCash" class="ordering__radio">
-            <label for="nonCash" class="ordering__label">Безналичный расчет</label>
-            <input type="radio" name="payment" id="privat24" class="ordering__radio">
-            <label for="privat24" class="ordering__label">LiqPay / Приват24</label>
-            <input type="radio" name="payment" id="cashOnDelivery" class="ordering__radio">
-            <label for="cashOnDelivery" class="ordering__label">Наличными при получении (Наложенным платежом)</label>
+            <fieldset class="ordering__payment">
+                <input type="radio" name="payment" id="nonCash" class="ordering__radio">
+                <label for="nonCash" class="ordering__label">Безналичный расчет</label>
+                <input type="radio" name="payment" id="privat24" class="ordering__radio">
+                <label for="privat24" class="ordering__label">LiqPay / Приват24</label>
+                <input type="radio" name="payment" id="cashOnDelivery" class="ordering__radio" required>
+                <label for="cashOnDelivery" class="ordering__label">Наличными при получении (Наложенным платежом)</label>
+            </fieldset>
             <button class="ordering__btn">Продолжить</button>
         </form>
     </section>
