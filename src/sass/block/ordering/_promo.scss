@@ -1,5 +1,5 @@
 .promo {
-    padding: 36px 0 15px;
+    padding: 36px 0 2px;
     &__wrapper {
         margin: 0 auto;
         width: 1290px;
@@ -26,7 +26,7 @@
         }
     }
     &__main {
-        padding-top: 60px;
+        padding-top: 55px;
         padding-bottom: 40px;
         margin: 0 auto;
         width: 1290px;
@@ -39,7 +39,6 @@
         font-weight: 800;
         font-size: 32px;
         line-height: 32px;
-        letter-spacing: 0.01em;
         color: $third_color;
     }
 

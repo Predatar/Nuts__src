@@ -1,5 +1,5 @@
 .order {
-    padding-bottom: 27px;
+    padding-bottom: 15px;
     &__table {
         margin: 0 auto;
         width: 1290px;
@@ -19,8 +19,21 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 32px;
-        text-align: center;
         color: $third_color;
+        text-align: left;
+        &:first-child {
+            padding-left: 25px;
+        }
+        &:nth-child(2) {
+            padding-left: 195px;
+        }
+        &:nth-child(3) {
+            padding-left: 100px;
+        }
+        &:nth-child(4) {
+            text-align: right;
+            padding-right: 29px;
+        }
     }
 
     &__body {
@@ -40,7 +53,20 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 32px;
-        text-align: center;
+        text-align: left;
+        &:first-child {
+            padding-left: 25px;
+        }
+        &:nth-child(2) {
+            padding-left: 53px;
+        }
+        &:nth-child(3) {
+            padding-left: 133px;
+        }
+        &:nth-child(4) {
+            text-align: right;
+            padding-right: 89px;
+        }
     }
 
     &__count {
@@ -97,7 +123,8 @@
     }
 }
 .action {
-    padding-top: 30px;
+    padding-top: 34px;
+    padding-left: 13px;
     margin: 0 auto;
     width: 1290px;
     display: flex;
@@ -135,6 +162,7 @@
     }
 
     &__total {
+        margin-left: 14px;
         display: flex;
     }
 

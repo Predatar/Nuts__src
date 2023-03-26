@@ -1,4 +1,5 @@
 .address {
+    padding-left: 32px;
     &__fop {
         display: flex;
     }
@@ -240,6 +241,9 @@
 }
 
 @media (max-width: 1355px) {
+    .address {
+        padding-left: 0;
+    }
     .address__corp {
         gap: 25px;
     }

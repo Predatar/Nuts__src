@@ -3,4 +3,7 @@
 @import 'base/header';
 @import 'block/order/promo';
 @import 'block/order/order';
-@import 'base/footer'
+@import 'base/footer';
+.footer__navigation {
+    margin-top: 42px;
+}

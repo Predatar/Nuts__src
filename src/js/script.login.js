@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (password.value == person.password) {
                 localStorage.setItem('isLogin', true);
                 localStorage.setItem('nameLogined', person.email);
-                document.location.href = '/index.html';
+                document.location.href = 'index.html';
             } else {
                 alert('Неыерный пароль');
             }

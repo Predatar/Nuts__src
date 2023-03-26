@@ -1,5 +1,5 @@
 .promo {
-    padding: 34px 0 15px;
+    padding: 34px 0 4px;
     &__wrapper {
         margin: 0 auto;
         width: 1290px;
@@ -44,7 +44,8 @@
     }
 
     &__manager {
-        margin-left: 190px;
+        margin-top: -3px;
+        margin-left: 130px;
     }
 
     &__manager-title {

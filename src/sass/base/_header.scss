@@ -647,7 +647,7 @@
 .mini-basket {
     padding: 18px 30px 25px;
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 100%;
     z-index: 10;
     opacity: 1;
@@ -665,7 +665,7 @@
     }
 
     &__body-row {
-        padding-top: 14px;
+        padding-top: 12px;
         padding-bottom: 16px;
         display: flex;
         justify-content: space-between;
@@ -682,6 +682,7 @@
     }
 
     &__count {
+        padding-left: 6px;
         display: flex;
         justify-content: center;
         align-items: center;

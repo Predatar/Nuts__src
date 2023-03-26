@@ -1,4 +1,5 @@
 .contact {
+    padding-left: 32px;
     &__fop {
     }
 
@@ -90,6 +91,12 @@
 
     &_hide {
         display: none;
+    }
+}
+
+@media (max-width: 1355px) {
+    .contact {
+        padding-left: 0;
     }
 }
 

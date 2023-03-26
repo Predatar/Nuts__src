@@ -22,15 +22,15 @@
     }
 
     &__title {
+        margin-top: 26px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 45px;
-        letter-spacing: 0.01em;
         color: $default_color;
     }
 
     &__subtitle {
-        margin-top: 30px;
+        margin-top: 20px;
         width: 420px;
         font-family: 'Raleway';
         font-weight: 500;
@@ -38,7 +38,7 @@
         line-height: 30px;
         text-align: center;
         letter-spacing: 0.01em;
-        color: $default_color
+        color: $default_color;
     }
 }
 
@@ -64,3 +64,6 @@
 }
 
 @import 'base/footer';
+.footer__navigation {
+    margin-top: 42px;
+}
